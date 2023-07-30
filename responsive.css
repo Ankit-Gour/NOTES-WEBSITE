@@ -1,0 +1,450 @@
+:root {
+  --smallestScreen: 240px;
+}
+
+/* to adjust the carousel */
+
+@media only screen and (max-width: 377px) {
+  #carouselContainer {
+    width: 100%;
+  }
+}
+
+/*  to adjust the card*/
+
+@media only screen and (min-width: 800px) {
+  #notes {
+    width: 100vw;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card-body {
+    height: 150px;
+  }
+}
+
+/* to adjust the bca gpt section */
+
+@media only screen and (max-width: 800px) {
+  .resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .resources iframe {
+    width: 360px;
+  }
+
+  .liveLearningFirstHeading {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .resources iframe {
+    width: 80vw;
+    margin: 10px 10%;
+  }
+
+  .liveLearningFirstHeading {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 351px) {
+  .resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .resources iframe {
+    width: 98vw;
+    margin: 10px 1%;
+    height: 200px;
+  }
+
+   .mainInLiveLearningPage {
+   
+    padding-top: 114px;
+    font-size: 15px;
+  }
+
+  .liveLearningFirstHeading {
+    padding: 5px;
+    font-size: 15px;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+
+/* pyq section */
+@media only screen and (max-width: 300px) {
+  .pyqCard {
+    height: auto;
+    width: 200px;
+    padding: 20px 20px;
+    overflow-y: hidden;
+  }
+  .cardBody {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .cardBody .card-title {
+    font-size: 15px;
+  }
+  .cardBody .card-text {
+    margin: 5px auto;
+    font-size: 13px;
+  }
+  .cardBody button {
+    width: 80px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 475px) {
+  #pyqSectionHeading {
+    position: absolute;
+    font-size: 18px;
+    margin-top: -40px;
+  }
+
+}
+
+
+
+/*inside pyq section */
+
+@media only screen and (max-width: 1095px) {
+  #xSemester {
+    width: 70vw;
+  }
+
+  /* mid 1 container have heading mid1 and link */
+  #mid1Container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 437px) {
+  #xSemester {
+    width: 95vw;
+    align-items: flex-start;
+  }
+
+  #sNumber {
+    font-size: 15px;
+  }
+
+  /* mid 1 container have heading mid1 and link */
+  #mid1Container {
+    width: 100%;
+  }
+
+  #mid1Heading {
+    font-size: 13px;
+  }
+
+  .paperLink {
+    font-size: 12px;
+  }
+}
+
+/* website features */
+@media only screen and (max-width: 500px) {
+  .featureBox {
+    height: auto;
+  }
+
+  .featureHeading {
+    overflow-y: hidden;
+    font-size: 20px;
+  }
+  .messageInsideFeaturesBox {
+    padding: 10px;
+    font-size: 15px;
+    overflow: hidden;
+  }
+  #pyqFeature {
+    animation: left 1s ease 1s 1 forwards;
+    margin-left: -100%;
+    width: 80%;
+  }
+  #notesFeature {
+    animation: right 1s ease 2s 1 forwards;
+    margin-left: -100%;
+    width: 80%;
+  }
+  #liveLearningFeature {
+    animation: left 1s ease 3s 1 forwards;
+    margin-left: -100%;
+    width: 80%;
+  }
+  #bcaGptFeature {
+    animation: right 1s ease 4s 1 forwards;
+    margin-left: 100%;
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 335px) {
+    .featureBox {
+      height: auto;
+    }
+
+    .featureHeading {
+      overflow-y: hidden;
+      font-size: 20px;
+    }
+    .messageInsideFeaturesBox {
+      padding: 10px;
+      font-size: 15px;
+      overflow: hidden;
+    }
+    #pyqFeature,
+    #notesFeature,
+    #liveLearningFeature,
+    #bcaGptFeature {
+      width: 100%;
+    }
+  }
+
+  @keyframes left {
+    0% {
+      margin-left: -100%;
+    }
+
+    100% {
+      margin-left: 1%;
+      /* margin-left:calc(100vw - 10%); */
+    }
+  }
+
+  @keyframes right {
+    0% {
+      margin-left: 400%;
+    }
+
+    100% {
+      margin-left: 1%;
+    }
+  }
+}
+
+/* notes card */
+@media only screen and (max-width: 799px) {
+  #notes {
+    height: 850px;
+  }
+}
+
+/* books section */
+@media only screen and (max-width: 816px) {
+  #recommendedBooks {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  .bookContainer {
+    /* background-color: red; */
+    margin-top: 10px;
+    min-width: 240px;
+    width: 100%;
+    /* height: 302px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bookImageContainer {
+    min-width: 230px;
+    min-height: 300px;
+  }
+  .bookDetails {
+    min-width: 230px;
+    width: 97%;
+    border-radius: 10px;
+    margin: 10px auto;
+    height: auto;
+  }
+  .bookName {
+    font-size: 94%;
+    padding-top: 2px;
+  }
+  .bookAuthor {
+    font-size: 80%;
+    padding-top: 2px;
+  }
+  .bookSummary {
+    font-size: 75%;
+    padding-top: 2px;
+  }
+}
+
+/* header */
+@media only screen and (max-width: 778px) {
+
+  #name{
+    animation: none;
+  }
+  #slideOptions {
+    font-size: 14px;
+    margin-left: 40%;
+
+  }
+  #logoAndTitle {
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header{
+
+     height:70px;
+    align-items: flex-start;
+    padding-top: 15px;
+  }
+  #slideOptions {
+   width: 0;
+   height: 0;
+  }
+  #logoAndTitle {
+    margin-left: 5px;
+  }
+
+  #darkLogoAndHammer {
+    width: 100px;
+    margin-right: 20px;
+  }
+  #light-dark-icon{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+
+@media only screen and (max-width:370px) {
+  header{
+    flex-direction: row;
+
+    height: 100px;
+  }
+ #logoAndTitle{
+
+  width: 100vw;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+ }
+ #darkLogoAndHammer {
+  width: 100vw;
+
+}
+#light-dark-icon{
+  margin: 10px 30px;
+}
+#open-close-icon{
+  margin: 10px 30px;
+ 
+}
+#extra-header{
+  margin-top: 120px;
+}
+#carouselContainer{
+  margin-top: 60px;
+}
+
+}
+
+@media only screen and (min-width:370px) {
+
+  #carouselContainer{
+    margin-top: 50px;
+  }
+}
+
+
+/* quick revision */
+@media only screen and (max-width:660px) {
+#question1{
+  
+    font-size: 16px;
+
+}
+#question2{
+  
+    font-size: 16px;
+
+}
+
+#question3 {
+	
+	padding: 3px 27px;
+
+}
+}
+@media only screen and (max-width:371px){
+  #question1{
+    margin-top: 40px;
+  }
+  #codingHeading {
+    
+
+    font-size: 15px;
+    padding-top: 40px;
+  }
+
+  .codingStatus {
+    padding: 0px 0px;
+
+  }
+}
+
+/* coding competition */
+
+@media only screen and (max-width:501px){
+  #codingHeading {
+    font-size: 18px;
+  
+    margin-top:70px;
+  }
+}
+@media only screen and (max-width:341px){
+  #live,#liveSoon,#all{
+    padding:0px 0px;
+    min-width:75px;
+    margin: 0px 2px;
+    font-size: 12px;
+  }
+  
+}
+@media only screen and (max-width:374px){
+  #codingHeading{
+    padding: 0 10px;
+    margin-top: 100px;
+  
+  }
+  .mainCompetition{
+    margin-top: 0px;
+    
+}
+  
+}
+
+
+
+/* contact us */
+@media only screen and (max-width:414px){
+  .contact-form {
+  /* background-color: red; */
+  width: 90vw;
+   }
+}
+

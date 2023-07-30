@@ -1,0 +1,69 @@
+:root{
+    --black:black;
+    --grey: rgb(28, 24, 24);
+--white:white;
+}
+
+
+
+
+
+header,#next,#footer, .codingCard,#successCard,#aboutUs,.modal-body,.modal-header,#goTop
+
+{
+    background-color:var(--black);
+    animation: fade 1s ease 0s 1 forwards;
+    
+}
+
+
+
+
+
+
+
+
+
+
+#bca,#hub,#slideOptions p,.card-text,#next,.featuresHeadingFirst p,#footer,#contactUsOn,#extra-header,#extra-header li ,#recommendedBooks,.bookDetails p,strong,.pyqCard,#mid1Container,#sNumber,.paperLink,p,.CodingName,.codingSiteName,#aboutUs,.card-body,.modal-header,.modal-body label,.form-text,#question1,#question2,#goTop
+
+
+
+{
+    color: var(--white) !important;
+    animation: fade 1s ease 0s 1 forwards;
+}
+
+
+body{
+    background-color:var(--grey) !important;
+    animation: fade 1s ease 0s 1 forwards;
+}
+
+.notesCard{
+    background-color: transparent !important;
+    animation: fade 1s ease 0s 1 forwards;
+}
+
+.featureBox,.messageInsideFeaturesBox {
+    background-color:var(--black);
+    color: var(--white);
+    animation: fade 1s ease 0s 1 forwards;
+}
+
+#open-close-icon{
+padding: -1px 0;
+    background-color: rgb(0, 0, 0);
+    animation: fade 1s ease 0s 1 forwards;
+  }
+
+
+  @keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+  }
