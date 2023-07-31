@@ -293,7 +293,7 @@ function iconChange() {
   // console.log(a.src);
   if (
     a.src == "http://127.0.0.1:5500/assets/open.png" ||
-    a.src == "https://ankit-gour.github.io/bca/assets/open.png"
+    a.src == "https://ankit-gour.github.io/bcaAspirants/assets/open.png"
   ) {
     a.src = "assets/close.png";
     extraHeader();
@@ -1138,7 +1138,7 @@ function darkMode() {
   let a = document.createElement("a");
   if (
     b.src == "http://127.0.0.1:5500/assets/light.gif" ||
-    b.src == "https://ankit-gour.github.io/bca/assets/light.gif"
+    b.src == "https://ankit-gour.github.io/bcaAspirantsAspirants/assets/light.gif"
   ) {
     // console.log("if");
     darkCss.href = "dark.css";
@@ -1155,7 +1155,7 @@ function iconChangeLightDark() {
 
   if (
     a.src == "http://127.0.0.1:5500/assets/dark.gif" ||
-    a.src == "https://ankit-gour.github.io/bca/assets/dark.gif"
+    a.src == "https://ankit-gour.github.io/bcaAspirants/assets/dark.gif"
   ) {
     a.src = "assets/light.gif";
   } else {

@@ -45,7 +45,7 @@ body{
     animation: fade 1s ease 0s 1 forwards;
 }
 
-.featureBox,.messageInsideFeaturesBox {
+.featureBox,.messageInsideFeaturesBox,.contact-form {
     background-color:var(--black);
     color: var(--white);
     animation: fade 1s ease 0s 1 forwards;
