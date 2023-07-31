@@ -1138,7 +1138,7 @@ function darkMode() {
   let a = document.createElement("a");
   if (
     b.src == "http://127.0.0.1:5500/assets/light.gif" ||
-    b.src == "https://ankit-gour.github.io/bcaAspirantsAspirants/assets/light.gif"
+    b.src == "https://ankit-gour.github.io/bcaAspirants/assets/light.gif"
   ) {
     // console.log("if");
     darkCss.href = "dark.css";
