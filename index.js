@@ -27,7 +27,12 @@
 
 
 // auto call arrival() function 
-arrival();
+window.onload=()=>{
+  setTimeout(() => {
+    
+    arrival();
+  }, 2000);
+}
 
 
 
