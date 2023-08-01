@@ -25,6 +25,14 @@
 
 
 
+
+// auto call arrival() function 
+arrival();
+
+
+
+
+
 // loader auto vanish
 window.addEventListener("load",()=>{
 
