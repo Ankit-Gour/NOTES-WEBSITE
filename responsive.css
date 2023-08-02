@@ -364,11 +364,14 @@ border-radius: 10px;
 
 }
 
-@media only screen and (min-width:370px) {
+@media only screen and (max-width:370px) {
 
-  #carouselContainer{
-    margin-top: 50px;
+ 
+  #extra-header {
+   margin: 0;
+   padding: 0;;
   }
+  
 }
 
 

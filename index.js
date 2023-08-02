@@ -127,18 +127,18 @@ function changeCarouselImages() {
       try {
         document.getElementById("carouselImage").src = sources[2];
       } catch (error) {}
-    }, 1000);
+    }, 2000);
     setTimeout(() => {
       try {
         document.getElementById("carouselImage").src = sources[1];
       } catch (error) {}
-    }, 2000);
+    }, 6000);
     setTimeout(() => {
       try {
         document.getElementById("carouselImage").src = sources[0];
       } catch (error) {}
-    }, 3000);
-  }, 3000);
+    }, 9000);
+  }, 12000);
 }
 
 changeCarouselImages();
