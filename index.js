@@ -1152,6 +1152,8 @@ function fetchQuestion() {
 }
 
 function goToTop() {
+  console.log("gotop is called");
+  
   document.getElementById("goTop").click();
 }
 
