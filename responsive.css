@@ -4,9 +4,15 @@
 
 /* to adjust the carousel */
 
-@media only screen and (max-width: 377px) {
+@media only screen and (max-width: 363px) {
   #carouselContainer {
+    width:98%;
+    margin-top: 0px;
+    height: auto;
+  }
+  #carouselImage{
     width: 100%;
+    height: auto;
   }
 }
 

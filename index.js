@@ -577,7 +577,8 @@ function home() {
         
         <div id="features"   class=" container-fluid">
   
-            <div   class=" featuresHeadingFirst" onclick="arrival()"> <p>Features</p></div>   
+            <div   class=" featuresHeadingFirst"
+             onclick="arrival()"> <p>Features</p></div>   
         
         </div>
           </main>
@@ -897,25 +898,25 @@ function arrival() {
                  
   
   <div id="pyqFeature" class="featureBox">
- <h3 class="featureHeading">Previous Year Question Papers</h3>
+ <h3 class="featureHeading" <h3 class="featureHeading" style="padding: 5px 6px;">Previous Year Question Papers</h3>
  <p class="messageInsideFeaturesBox">Welcome to our PYQ (Previous Year Questions) section! Prepare for success with our vast collection of past exam questions and their detailed solutions. Ace your exams by practicing with real questions from previous years, gaining valuable insights into the exam pattern and improving your problem-solving skills. Let's excel together!</p>
  </div>
  
  <div id="notesFeature" class="featureBox">
- <h3 class="featureHeading">Notes of all the subjects</h3>
+ <h3 class="featureHeading" <h3 class="featureHeading" style="padding: 5px 6px;">Notes of all the subjects</h3>
  <p class="messageInsideFeaturesBox">Discover a treasure trove of knowledge in our Notes section! Access comprehensive and well-organized study materials, lecture summaries, and topic-wise notes to fuel your learning journey. From concise summaries to in-depth explanations, our Notes section will help you grasp concepts effortlessly. Enhance your understanding and boost your academic performance with us!</p>
  </div>
  </div> 
  
  
  <div id="liveLearningFeature" class="featureBox">
- <h3 class="featureHeading">Learn anything in Live Learning section</h3>
+ <h3 class="featureHeading" <h3 class="featureHeading" style="padding: 5px 6px;">Learn anything in Live Learning section</h3>
  <p class="messageInsideFeaturesBox">Welcome to our Live Learning section - where education comes to life! Join our interactive virtual classrooms led by expert instructors. Engage in real-time discussions, ask questions, and collaborate with fellow learners worldwide. Experience personalized learning, receive instant feedback, and unlock your full potential. Enrich your education in real-time!</p>
  </div> 
  
  
  <div id="bcaGptFeature" class="featureBox" >
- <h3 class="featureHeading">BCA GPT section to learn and practice coding</h3>
+ <h3 class="featureHeading" <h3 class="featureHeading" style="padding: 5px 6px;">BCA GPT section to learn and practice coding</h3>
  <p class="messageInsideFeaturesBox">Unlock the world of coding in our Programming section! Whether you're a beginner or a seasoned developer, we have resources to elevate your skills. Explore a wide range of programming languages, step-by-step tutorials, and coding projects. Embrace the art of problem-solving and innovation as you embark on an exciting programming journey with us!</p>
  </div> 
   
