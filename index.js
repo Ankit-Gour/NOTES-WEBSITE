@@ -121,14 +121,15 @@ setInterval(() => {
 }, 18000);
 
 //001 Resorces for the carousel images
-const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).png"];
+const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).jpg","assets/c (3).jpg"];
+
 function changeCarouselImages() {
-  setInterval(() => {
+ 
     setTimeout(() => {
       try {
         document.getElementById("carouselImage").src = sources[2];
       } catch (error) {}
-    }, 2000);
+    }, 3000);
     setTimeout(() => {
       try {
         document.getElementById("carouselImage").src = sources[1];
@@ -139,10 +140,17 @@ function changeCarouselImages() {
         document.getElementById("carouselImage").src = sources[0];
       } catch (error) {}
     }, 9000);
-  }, 12000);
+    setTimeout(() => {
+      try {
+        document.getElementById("carouselImage").src = sources[3];
+      } catch (error) {}
+    }, 12000);
+ 
 }
-
-changeCarouselImages();
+setInterval(() => {
+  changeCarouselImages();
+  
+},12000 );
 
 function pauseImage() {
   //  console.log("pauseImage()");
