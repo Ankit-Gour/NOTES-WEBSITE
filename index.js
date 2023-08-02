@@ -1124,6 +1124,11 @@ function iconChangeLightDark() {
 
 function getQuestion() {
   iconChange();
+  fetchQuestion();
+  document.getElementById("question3").click();
+}
+function fetchQuestion() {
+  
 
   document.getElementById(
     "main"
@@ -1139,10 +1144,11 @@ function getQuestion() {
     <div id="questionContainer">
     <h4 id="question1">${data.results[0].question}</h4>
     <h5 id="question2">${data.results[0].correct_answer}</h5>
-    <button onclick="getQuestion(),removeExtraHeader();" id="question3">Next</button>
+    <button onclick="fetchQuestion(),removeExtraHeader();" id="question3">Next</button>
     </div>
     </main>`;
     });
+
 }
 
 function goToTop() {
