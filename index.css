@@ -101,10 +101,9 @@ background: rgb(243, 243, 243);
 
 /* extra header section */
 #extra-header {
-	padding-top: 100px;
-  /* background-color: yellow; */
+
 	animation: extraHeaderAnimation 0.5s ease 1ms 1 forwards;
-  /* padding-top: 80px; */
+
 }
 #extra-header li {
   display: flex;
@@ -217,7 +216,7 @@ background: rgb(243, 243, 243);
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  box-shadow: 7px 9px 13px black;
+  /* box-shadow: 7px 9px 13px black; */
   width: 360px;
   margin: 10px auto;
   overflow: hidden;
