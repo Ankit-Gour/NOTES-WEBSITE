@@ -35,7 +35,7 @@ window.onload = () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  }, 2000);
+  },2000);
 });
 
 // Auto change option in header
@@ -1131,13 +1131,12 @@ function iconChangeLightDark() {
 
 // challenge
 
-function getQuestion() {
+function getQuestion(){
   iconChange();
   fetchQuestion();
   document.getElementById("question3").click();
 }
 function fetchQuestion() {
-  
 
   document.getElementById(
     "main"

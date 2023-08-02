@@ -461,14 +461,14 @@ padding: 10px 10px;
   border: 1px solid #cccccc;
   border-radius: 5px;
  }
-#contactFormSubmitButton {
-  background-color: rgb(126, 126, 221);
-  border-radius: 8px;
- margin: 0 auto;
-  height: auto;
-  padding: 6px 24px;
-  
- }
+ #contactFormSubmitButton {
+	background-color: rgb(70, 70, 183);
+	border-radius: 8px;
+	margin: 0 auto;
+	height: auto;
+	padding: 6px 24px;
+	color: white;
+}
 
  .form-floating {
 	position: relative;
