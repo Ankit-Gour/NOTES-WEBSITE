@@ -19,8 +19,8 @@
 //016 Arrival Function
 //017 Arrival Function
 //018 on clicking image
-// 773 showMore()
-
+// 773 showMore() 
+  
 //  Appendices
 
 // auto call arrival() function
