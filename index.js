@@ -25,6 +25,7 @@
 
 // auto call arrival() function
 window.onload = () => {
+  goToTop();
   setTimeout(() => {
     arrival();
   }, 2000);
@@ -120,7 +121,7 @@ setInterval(() => {
 }, 18000);
 
 //001 Resorces for the carousel images
-const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).jpg"];
+const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).png"];
 function changeCarouselImages() {
   setInterval(() => {
     setTimeout(() => {
