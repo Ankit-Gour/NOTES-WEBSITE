@@ -23,31 +23,19 @@
 
 //  Appendices
 
-
-
-
-// auto call arrival() function 
-window.onload=()=>{
+// auto call arrival() function
+window.onload = () => {
   setTimeout(() => {
-    
     arrival();
   }, 2000);
-}
-
-
-
-
+};
 
 // loader auto vanish
-window.addEventListener("load",()=>{
-
-      setTimeout(() => {
-        
-        document.getElementById("preloader").remove();
-      }, 2000);
-
- 
-})
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("preloader").remove();
+  }, 2000);
+});
 
 // Auto change option in header
 const options = [
@@ -59,7 +47,7 @@ const options = [
   "About Us",
   "Home",
   "Codeathons",
-  "Quick Revision"
+  "Quick Revision",
 ];
 const optionRelatedFunctions = [
   "books()",
@@ -70,7 +58,7 @@ const optionRelatedFunctions = [
   "aboutUs()",
   "home()",
   "createArray()",
-  "getQuestion()"
+  "getQuestion()",
 ];
 document.getElementById(
   "slideOptions"
@@ -131,16 +119,6 @@ setInterval(() => {
   changeOptions();
 }, 18000);
 
-
-
-
-
-
-
-
-
-
-
 //001 Resorces for the carousel images
 const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).jpg"];
 function changeCarouselImages() {
@@ -184,7 +162,7 @@ function resumeImage() {
 
 // 002 adding extra header
 function extraHeader() {
- document.getElementById("top").click();
+  document.getElementById("top").click();
   let a = document.createElement("div");
   a.innerHTML = ` <div id="extra-header"  class="contactForm" onmouseleave="iconChange()">
   <div class="container" onclick="removeExtraHeader()" >
@@ -301,7 +279,6 @@ function prev() {
 
 // 006 open close icon change on click
 function iconChange() {
-
   let a = document.getElementById("open-close-icon");
   // console.log(a.src);
   if (
@@ -404,11 +381,9 @@ function pyq() {
 
 // 008 what happens on clicking home button
 
-
-
 function home() {
   removeExtraHeader();
-  iconChange()
+  iconChange();
   document.getElementById("main").innerHTML = `<div id="superMainContainer" >
   <!-- 1login modal -->
   <!-- 2Signup modal -->
@@ -948,25 +923,16 @@ document.getElementById("carouselImage").addEventListener("mousemove", () => {
   document.getElementById("carouselImage").style = "cursor:pointer";
 });
 
-
-
-
-
-
-
-
 //codingCompetiton()
-var competitionArray=[]
+var competitionArray = [];
 
-const createArray= ()=>{
-  
+const createArray = () => {
   console.log("create array");
-  
-  competitionArray=[];
+
+  competitionArray = [];
 
   fetch("https://kontests.net/api/v1/all")
     .then((data) => {
-    
       return data.json();
     })
     .then((data) => {
@@ -985,8 +951,7 @@ const createArray= ()=>{
       <div id="codingResults"></div>
       
       </main>`;
-      data.forEach((e)=>{
-
+      data.forEach((e) => {
         competitionArray.push(e);
 
         let status, style;
@@ -1019,23 +984,18 @@ const createArray= ()=>{
         </div>
         </a>
     </div>`;
-      })
-   
-    
       });
-
-}
-
+    });
+};
 
 // createArray()
 
-const liveOnly=()=>{
+const liveOnly = () => {
+  console.log(competitionArray);
 
-console.log(competitionArray);
-
-
-
-  document.getElementById("main").innerHTML = `<main id="main" class="mainCompetition">
+  document.getElementById(
+    "main"
+  ).innerHTML = `<main id="main" class="mainCompetition">
   <p id="codingHeading">Live coding competitions </p>
   <div id="liveLiveSoonButtons">
     
@@ -1044,19 +1004,20 @@ console.log(competitionArray);
       <button id="all"  class="buttons"  onclick="createArray()">All</button></div></div>
       <div id="codingResults"></div>
   </main>`;
-competitionArray.forEach((e)=>{
-if(e.status==="CODING"){
+  competitionArray.forEach((e) => {
+    if (e.status === "CODING") {
+      let status, style;
+      if (e.status == "CODING") {
+        status = "Live";
+        style = `background:green`;
+      } else {
+        status = "Live Soon";
+        style = `background:orange`;
+      }
 
-        let status, style;
-        if (e.status == "CODING") {
-          status = "Live";
-          style = `background:green`;
-        } else {
-          status = "Live Soon";
-          style = `background:orange`;
-        }
-
-        document.getElementById( "codingResults" ).innerHTML += ` <div class="codingCard" >
+      document.getElementById(
+        "codingResults"
+      ).innerHTML += ` <div class="codingCard" >
       <a href="${e.url}" class="card-link" >
       <div class="codingCardBody">
         <h5 class="card-title CodingName">${e.name}</h5>
@@ -1074,21 +1035,16 @@ if(e.status==="CODING"){
     
         </div>
         </a>
-    </div>`;}
+    </div>`;
+    }
+  });
+};
+const liveSoon = () => {
+  console.log("live soon function called");
 
-  })
-    
-
-
-
-
-
-  }
-const liveSoon=()=>{
-
-console.log("live soon function called");
-
-  document.getElementById("main").innerHTML = `<main id="main" class="mainCompetition">
+  document.getElementById(
+    "main"
+  ).innerHTML = `<main id="main" class="mainCompetition">
   <p id="codingHeading">Future coding events</p>
   <div id="liveLiveSoonButtons">
   <button id="live"  class="buttons"  onclick="liveOnly()">Live</button>
@@ -1096,21 +1052,20 @@ console.log("live soon function called");
   <button id="all"  class="buttons"  onclick="createArray()">All</button></div></div>
   <div id="codingResults"></div>
   </main>`;
-competitionArray.forEach((e)=>{
-if(e.status==="BEFORE"){
+  competitionArray.forEach((e) => {
+    if (e.status === "BEFORE") {
+      let status, style;
+      if (e.status == "CODING") {
+        status = "Live";
+        style = `background:green`;
+      } else {
+        status = "Live Soon";
+        style = `background:orange`;
+      }
 
-        let status, style;
-        if (e.status == "CODING") {
-          status = "Live";
-          style = `background:green`;
-        } else {
-          status = "Live Soon";
-          style = `background:orange`;
-        }
-
-        document.getElementById(
-          "codingResults"
-        ).innerHTML += ` <div class="codingCard" >
+      document.getElementById(
+        "codingResults"
+      ).innerHTML += ` <div class="codingCard" >
       <a href="${e.url}" class="card-link" >
       <div class="codingCardBody">
         <h5 class="card-title CodingName">${e.name}</h5>
@@ -1128,20 +1083,10 @@ if(e.status==="BEFORE"){
     
         </div>
         </a>
-    </div>`;}
-
-  })
-    
-
-
-
-
-
-  }
-
-
-
-
+    </div>`;
+    }
+  });
+};
 
 // darkMode()
 
@@ -1152,15 +1097,13 @@ function darkMode() {
   if (
     b.src == "http://127.0.0.1:5500/assets/light.gif" ||
     b.src == "https://ankit-gour.github.io/bcaAspirants/assets/light.gif"
-    
   ) {
     // console.log("if");
     darkCss.href = "dark.css";
   } else {
     setTimeout(() => {
-      
-      darkCss.href=``
-    },10);
+      darkCss.href = ``;
+    }, 10);
   }
 }
 
@@ -1177,41 +1120,33 @@ function iconChangeLightDark() {
   }
 }
 
-
 // challenge
 
-
-
-function getQuestion(){
-
+function getQuestion() {
   iconChange();
- 
-  
-  document.getElementById("main").innerHTML=` <main id="main"> <div id="questionContainer" class="questionContainer"></div></main>`;
-  fetch("https://opentdb.com/api.php?amount=1&category=18&difficulty=easy&type=multiple").then((data)=>{
-    return data.json();
-  }).then((data)=>{
-    document.getElementById("main").innerHTML=`<main id="main">
+
+  document.getElementById(
+    "main"
+  ).innerHTML = ` <main id="main"> <div id="questionContainer" class="questionContainer"></div></main>`;
+  fetch(
+    "https://opentdb.com/api.php?amount=1&category=18&difficulty=easy&type=multiple"
+  )
+    .then((data) => {
+      return data.json();
+    })
+    .then((data) => {
+      document.getElementById("main").innerHTML = `<main id="main">
     <div id="questionContainer">
     <h4 id="question1">${data.results[0].question}</h4>
     <h5 id="question2">${data.results[0].correct_answer}</h5>
     <button onclick="getQuestion(),removeExtraHeader();" id="question3">Next</button>
     </div>
-    </main>`
-
-
-    
-  })
+    </main>`;
+    });
 }
 
-
-
-
-
-
-
-function goToTop(){
-  document.getElementById("goTop").click()
+function goToTop() {
+  document.getElementById("goTop").click();
 }
 
 // Appendices

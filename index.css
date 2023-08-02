@@ -804,10 +804,11 @@ display: flex;
   /* background-color: rgb(113, 156, 113); */
   /* margin-top: 100px; */
   width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  row-gap: 30px;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
  }
 
 .featureBox {
@@ -816,7 +817,12 @@ display: flex;
   height: 300px;
   margin-bottom: 20px;
   box-shadow: 5px 5px 20px black;
-  border-radius: 79px 0 43px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
  }
 
  .featuresHeadingFirst {
@@ -829,41 +835,38 @@ display: flex;
 	margin-bottom: 50px;
 	width: auto;
 	margin: 10px auto;
-	border-radius: 2px;
+
 	cursor: pointer;
 }
 
 .featureHeading {
-  margin-top: 20px;
+ 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 10px;
-  font-size: 25px;
-  /* background-color: white; */
-  padding: 10px 0 0 126px;
-  height: auto;
+
+  font-size: 20px;
+  padding: 10px;
+
   overflow: hidden;
  }
 
 #pyqFeature {
-  animation: left 1s ease 1s 1 forwards;
-  margin-left: -60%;
-  width: 58%;
+  animation: opacity 1s ease 1s 1 forwards;
+  width:95%;
  }
 #notesFeature {
-  animation: right 1s ease 2s 1 forwards;
-  margin-left: 100%;
-  width: 58%;
+  animation: opacity 1s ease 2s 1 forwards;
+  
+  width:95%;
  }
 #liveLearningFeature {
-  animation: left 1s ease 3s 1 forwards;
-  margin-left: -60%;
-
-  width: 58%;
+  animation: opacity 1s ease 3s 1 forwards;
+ 
+  width:95%;
  }
 #bcaGptFeature {
-  animation: right 1s ease 4s 1 forwards;
-  margin-left: 100%;
-  width: 58%;
+  animation: opacity 1s ease 4s 1 forwards;
+  
+  width:95%;
  }
 
 .messageInsideFeaturesBox {
@@ -1064,25 +1067,17 @@ padding-bottom: 20px;
 /* Animations Section */
 
 /* features arrival animation */
-@keyframes left {
+@keyframes opacity {
   0% {
-    margin-left: 1%;
+   opacity: 0;
   }
 
   100% {
-    margin-left: 40%;
+    opacity: 1;
   }
 }
 
-@keyframes right {
-  0% {
-    margin-left: 48%;
-  }
 
-  100% {
-    margin-left: 1%;
-  }
-}
 
 @keyframes extraHeaderAnimation {
   from {
