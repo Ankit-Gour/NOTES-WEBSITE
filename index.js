@@ -33,9 +33,10 @@ window.onload = () => {
 
 // loader auto vanish
 window.addEventListener("load", () => {
+
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  },300000);
+  },30000);
 });
 
 // Auto change option in header
