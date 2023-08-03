@@ -8,9 +8,12 @@
  
 #loadingImage{
 
-height: 300px;
-width: 300px;
-border-radius: 50%;}
+/* height: 300px;
+width: 300px; */
+/* border-radius: 50%; */
+opacity: .2;
+}
+
 #preloader{
 scroll-behavior:none;
  overflow: hidden;
@@ -19,7 +22,7 @@ margin-bottom: 100000vh;
 display: flex;
 justify-content: center;
 padding:  100px 0;
-background-color: #fff;
+background-color: #171739;
 }
 
 * {

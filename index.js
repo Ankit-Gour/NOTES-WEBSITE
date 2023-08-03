@@ -35,7 +35,7 @@ window.onload = () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  },2000);
+  },3000);
 });
 
 // Auto change option in header
@@ -824,7 +824,8 @@ function liveLearning() {
   iconChange();
   document.getElementById(
     "main"
-  ).innerHTML = `<main id="main" class="d-flex justify-content-center align-items-center "><div class="spinner-grow text-primary" role="status">
+  ).innerHTML = `<main id="main" class="d-flex justify-content-center align-items-center  ">
+  <div class="spinner-grow text-primary" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
 </main>`;
@@ -832,17 +833,10 @@ function liveLearning() {
   setTimeout(() => {
     document.getElementById(
       "main"
-    ).innerHTML = `<main id="main" class="mainInLiveLearningPage"><div><p class="liveLearningFirstHeading">This is live learning section. You can learn anything that is under the ambit of computer science</p>
+    ).innerHTML = `<main id="main" class="mainInLiveLearningPage"><div><p class="liveLearningFirstHeading">Best Youtube Channels to learn all about computer  science and Placements</p>
   <div class="resources">
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Oe421EPjeBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8jLOx1hD3_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1WpKsY9LBlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gtjxAH8uaP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GnodscC2p-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-fW2X7fh7Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nDGA3km5He4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MsnQ5uepIaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   
+  <iframe src="https://www.codewithharry.com/" height=600pc></iframe>
   </div>
   </div></main>`;
   }, 1000);
