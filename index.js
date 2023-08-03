@@ -35,7 +35,7 @@ window.onload = () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  },3000);
+  },300000);
 });
 
 // Auto change option in header
