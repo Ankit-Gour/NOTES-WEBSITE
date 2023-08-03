@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  },30000);
+  },3000);
 });
 
 // Auto change option in header
@@ -122,8 +122,8 @@ setInterval(() => {
 }, 18000);
 
 //001 Resorces for the carousel images
-const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).jpg","assets/c (3).jpg"];
-
+const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).jpg","assets/c (3).jpg","assets/c (4).png"];
+changeCarouselImages();
 function changeCarouselImages() {
  
     setTimeout(() => {
@@ -146,12 +146,17 @@ function changeCarouselImages() {
         document.getElementById("carouselImage").src = sources[3];
       } catch (error) {}
     }, 12000);
+    setTimeout(() => {
+      try {
+        document.getElementById("carouselImage").src = sources[4];
+      } catch (error) {}
+    }, 15000);
  
 }
 setInterval(() => {
   changeCarouselImages();
   
-},12000 );
+},15000 );
 
 function pauseImage() {
   //  console.log("pauseImage()");
@@ -159,6 +164,8 @@ function pauseImage() {
   sources[0] = document.getElementById("carouselImage").src;
   sources[1] = document.getElementById("carouselImage").src;
   sources[2] = document.getElementById("carouselImage").src;
+  sources[3] = document.getElementById("carouselImage").src;
+  sources[4] = document.getElementById("carouselImage").src;
 }
 
 function resumeImage() {
@@ -167,7 +174,9 @@ function resumeImage() {
   //  console.log("resumeImage()");
   sources[0] = "assets/c (1).jpg";
   sources[1] = "assets/c (2).jpg";
-  sources[2] = "assets/c (4).jpg";
+  sources[2] = "assets/c (3).jpg";
+  sources[3] = "assets/c (4).jpg";
+  sources[4] = "assets/c (4).png";
 }
 
 // 002 adding extra header
