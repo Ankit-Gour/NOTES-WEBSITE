@@ -845,8 +845,16 @@ function liveLearning() {
       "main"
     ).innerHTML = `<main id="main" class="mainInLiveLearningPage"><div><p class="liveLearningFirstHeading">Best Youtube Channels to learn all about computer  science and Placements</p>
   <div class="resources">
-  
-  <iframe src="https://www.codewithharry.com/" height=600pc></iframe>
+  <div id="youtubeChannel">
+  <ul>
+  <li>CodeWithHarry</li>
+  <li>Apni Kaksha</li>
+  <li>MySirG</li>
+  <li>Geeks for Geeks</li>
+  <li></li>
+  </ul>
+  <P></P>
+  </div>
   </div>
   </div></main>`;
   }, 1000);
@@ -1169,6 +1177,29 @@ function goToTop() {
   
   document.getElementById("goTop").click();
 }
+
+
+function socialMedia(platform){
+  console.log(platform);
+  
+  let a =document.createElement("div");
+  a.innerHTML=`<div><iframe src="${platform}" width="600" height="600"></iframe></div>
+  `
+document.getElementById("superMainContainer").append(a);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 // Appendices
 const First_Semester = {

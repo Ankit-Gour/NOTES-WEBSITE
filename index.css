@@ -11,18 +11,18 @@
 height: 300px;
 width: 300px;
 border-radius: 50%;
-opacity: .2;
+opacity: .8;
 }
 
 #preloader{
 scroll-behavior:none;
  overflow: hidden;
-height: 100vh;
+height: 1000vh;
 margin-bottom: 100000vh;
 display: flex;
 justify-content: center;
 padding:  100px 0;
-background-color: #171739;
+background-color: #141414;
 }
 
 * {
@@ -342,6 +342,19 @@ color: white !important;
   overflow-x: hidden;
   margin: 0;
 
+ }
+
+ #github{
+width: 60px;
+
+ }
+ #githubImage{
+  padding: 2px;
+  width: 100%;
+  height: 90%;
+ }
+ #socialMediaIcons{
+  /* background-color: rgb(141, 108, 108); */
  }
 
 /* to size the image in the notes and pyq part */
