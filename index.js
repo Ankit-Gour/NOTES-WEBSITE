@@ -1217,13 +1217,13 @@ document.getElementById("superMainContainer").append(a);
 // content Loader
 
 function contentLoader(){
-  console.log("loader");
+ 
   
   document.getElementById("main").innerHTML=`
 <div id="content">
   <img id="contentLoader" src="assets/contentLoader.gif"></div>`;
   setTimeout(() => {
-    document.getElementById("contentLoader").remove();
+     document.getElementById("contentLoader").remove();
   },1000);
 }
 
