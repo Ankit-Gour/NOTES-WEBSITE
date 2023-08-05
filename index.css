@@ -1049,9 +1049,18 @@ padding-bottom: 20px;
 }
 
 
+/* contentLoader */
+#content{
+display: flex;
+justify-content: center;
+}
+#contentLoader{
+  opacity: 0.8;
+  border-radius: 50%;
+width: 200px;
+height: 200px;
 
-
-
+}
 
 
 

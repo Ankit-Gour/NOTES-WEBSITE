@@ -25,7 +25,7 @@
 
 // auto call arrival() function
 window.onload = () => {
-  goToTop();
+ goToTop();
   setTimeout(() => {
     arrival();
   }, 2000);
@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  },3000);
+  },1);
 });
 
 // Auto change option in header
@@ -187,15 +187,15 @@ function extraHeader() {
   <div class="container" onclick="removeExtraHeader()" >
     <u id="options-in-extra-header" onclick="pauseImage()"
     onmousemove="resumeImage()"">
-      <li class=" mx-3 my-2 fs-5  overflow-y-hidden" onclick="home()" >Home </li>
-      <li class=" mx-3 my-2 fs-5  h-5 overflow-y-hidden" onclick="books()">Books</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="pyq()" id="test">PYQs</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="bcaGpt()">BCA GPT </li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="liveLearning()">Live Learning </li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="getQuestion()">Quick Revision</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="createArray()">Codeathons</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="contactUs()">Contact Us</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="aboutUs()">About Us</li>
+      <li class=" mx-3 my-2 fs-5  overflow-y-hidden" onclick="home(),contentLoader();" >Home </li>
+      <li class=" mx-3 my-2 fs-5  h-5 overflow-y-hidden" onclick="books(),contentLoader();">Books</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="pyq(),contentLoader();" id="test">PYQs</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="bcaGpt(),contentLoader();">BCA GPT </li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="liveLearning(),contentLoader();">Live Learning </li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="getQuestion(),contentLoader();">Quick Revision</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="createArray(),contentLoader();">Codeathons</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="contactUs(),contentLoader();">Contact Us</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="aboutUs(),contentLoader();">About Us</li>
     </u>
     <div id="login-signup">
     <button type="button" class="mx-3 my-5 cnow" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="iconChange()">Login
@@ -401,8 +401,10 @@ function pyq() {
 // 008 what happens on clicking home button
 
 function home() {
+ 
   removeExtraHeader();
   iconChange();
+  setTimeout(() => {
   document.getElementById("main").innerHTML = `<div id="superMainContainer" >
   <!-- 1login modal -->
   <!-- 2Signup modal -->
@@ -597,12 +599,16 @@ function home() {
     </div>
 `;
   document.getElementById("footer").before(main);
+}, 1000);
 }
 
 //009  About us page
 function aboutUs() {
   // console.log("aboutUs function called");
   iconChange();
+  setTimeout(() => {
+    
+ 
   document.getElementById("main").innerHTML = `
   <main id="main">
   <div id="aboutUs" class="card">
@@ -658,11 +664,15 @@ function aboutUs() {
 </div>
 </main>
 `;
+}, 500);
 }
 
 //010  contact us page
 function contactUs() {
   iconChange();
+  setTimeout(() => {
+    
+
   document.getElementById("main").innerHTML = `<main id="main">
   <div class="contact-form ">
         <h4 class="subHeadings">Contact Us</h4>         
@@ -699,11 +709,14 @@ function contactUs() {
         </form>
     </div>
   </main>`;
+}, 500);
 }
 
 // 011 section for books
 function books() {
   iconChange();
+setTimeout(() => {
+  
 
   document.getElementById("main").innerHTML = `
  <main id="main">
@@ -787,18 +800,15 @@ function books() {
 
 
 </main>;`;
+}, 500);
 
-  // setTimeout(() => {
-  //   document.getElementById("main").innerHTML = `
-  //   <main id="main">
-
-  //  </main>;`;
-  // }, 1000);
 }
 
 //012  semesterWisePreviousYearQuestionPaper()
 function semesterWisePreviousYearQuestionPapers(x, y) {
   iconChange();
+setTimeout(() => {
+  
 
   document.getElementById("main").innerHTML = `<main id="main">
   <div id="xSemester">
@@ -827,11 +837,15 @@ function semesterWisePreviousYearQuestionPapers(x, y) {
   
   </div>
   </main>`;
+}, 500);
 }
 
 //013  live learning function
 function liveLearning() {
   iconChange();
+  setTimeout(() => {
+    
+ 
   document.getElementById(
     "main"
   ).innerHTML = `<main id="main" class="d-flex justify-content-center align-items-center  ">
@@ -858,12 +872,15 @@ function liveLearning() {
   </div>
   </div></main>`;
   }, 1000);
+}, 500);
 }
 
 // 014 BCA Gpt learning function
 function bcaGpt() {
   // console.log("BCA gpt function is called");
   iconChange();
+setTimeout(() => {
+  
 
   document.getElementById("main").innerHTML = `<main id="main">
   <div><p class="liveLearningFirstHeading">This is BCA GPT Section here you will find usefull videos related to programming along with their compiler/interpreter</p>
@@ -883,6 +900,7 @@ function bcaGpt() {
   </main>
   
   `;
+}, 500);
 }
 
 // 015 submit function
@@ -949,8 +967,7 @@ document.getElementById("carouselImage").addEventListener("mousemove", () => {
 var competitionArray = [];
 
 const createArray = () => {
-  console.log("create array");
-
+  iconChange();
   competitionArray = [];
 
   fetch("https://kontests.net/api/v1/all")
@@ -1146,9 +1163,12 @@ function iconChangeLightDark() {
 
 function getQuestion(){
   iconChange();
+  setTimeout(() => {
+
   fetchQuestion();
-  document.getElementById("question3").click();
+}, 500);
 }
+
 function fetchQuestion() {
 
   document.getElementById(
@@ -1173,8 +1193,8 @@ function fetchQuestion() {
 }
 
 function goToTop() {
+
   console.log("gotop is called");
-  
   document.getElementById("goTop").click();
 }
 
@@ -1194,7 +1214,18 @@ document.getElementById("superMainContainer").append(a);
 
 
 
+// content Loader
 
+function contentLoader(){
+  console.log("loader");
+  
+  document.getElementById("main").innerHTML=`
+<div id="content">
+  <img id="contentLoader" src="assets/contentLoader.gif"></div>`;
+  setTimeout(() => {
+    document.getElementById("contentLoader").remove();
+  },1000);
+}
 
 
 
