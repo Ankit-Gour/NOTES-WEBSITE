@@ -187,15 +187,15 @@ function extraHeader() {
   <div class="container" onclick="removeExtraHeader()" >
     <u id="options-in-extra-header" onclick="pauseImage()"
     onmousemove="resumeImage()"">
-      <li class=" mx-3 my-2 fs-5  overflow-y-hidden" onclick="home(),contentLoader();" >Home </li>
-      <li class=" mx-3 my-2 fs-5  h-5 overflow-y-hidden" onclick="books(),contentLoader();">Books</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="pyq(),contentLoader();" id="test">PYQs</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="bcaGpt(),contentLoader();">BCA GPT </li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="liveLearning(),contentLoader();">Live Learning </li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="getQuestion(),contentLoader();">Quick Revision</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="createArray(),contentLoader();">Codeathons</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="contactUs(),contentLoader();">Contact Us</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="aboutUs(),contentLoader();">About Us</li>
+      <li class=" mx-3 my-2 fs-5  overflow-y-hidden" onclick="home();" >Home </li>
+      <li class=" mx-3 my-2 fs-5  h-5 overflow-y-hidden" onclick="books();">Books</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="pyq();" id="test">PYQs</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="bcaGpt();">BCA GPT </li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="liveLearning();">Live Learning </li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="getQuestion();">Quick Revision</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="createArray();">Codeathons</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="contactUs();">Contact Us</li>
+      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="aboutUs();">About Us</li>
     </u>
     <div id="login-signup">
     <button type="button" class="mx-3 my-5 cnow" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="iconChange()">Login
@@ -229,13 +229,13 @@ function next() {
 
 
     <!-- java -->
-    <a  href="https://drive.google.com/file/d/1EiPwYuB6uFEMn6nCZqqFkITEXj8OIXMK/view?usp=sharing"
+    <a  href="https://www.tutorialspoint.com/java/java_tutorial.pdf"
     target="_blank">
     <div class="card notesCard">
       <img src="assets/java.png" class=" size" alt="Java Notes">
       <div class="card-body cardBody">
         <h5 class="card-title">Java Notes</h5>
-        <p class="card-text">Get handwritten notes of Java</p>
+     
         </div>
         </div>
         </a>
@@ -243,27 +243,27 @@ function next() {
 
 
     <!-- Python -->
-    <a  href="https://drive.google.com/file/d/1EiPwYuB6uFEMn6nCZqqFkITEXj8OIXMK/view?usp=sharing"
+    <a  href="https://mrcet.com/downloads/digital_notes/CSE/III%20Year/PYTHON%20PROGRAMMING%20NOTES.pdf"
     target="_blank">
     <div class="card notesCard">
   
       <img src="assets/python.png" class=" size" alt=" Python Notes">
       <div class="card-body cardBody">
         <h5 class="card-title">Python Notes</h5>
-        <p class="card-text">Get handwritten notes of Python</p>
+      
         </div>
         </div>
         </a>
 
 
     <!-- HTML -->
-    <a  href="https://drive.google.com/file/d/1EiPwYuB6uFEMn6nCZqqFkITEXj8OIXMK/view?usp=sharing"   target="_blank">
+    <a  href="https://studyglance.in/lecturenotes/data/HTML%28WT%29%20Lecture%20Notes.pdf"   target="_blank">
     <div class="card notesCard">
  
       <img src="assets/html.png" class=" size" alt="Notes">
       <div class="card-body cardBody">
         <h5 class="card-title">HTML Notes</h5>
-        <p class="card-text">Get handwritten notes of HTML</p>
+       
         </div>
         </div>
         </a>
@@ -404,7 +404,7 @@ function home() {
  
   removeExtraHeader();
   iconChange();
-  setTimeout(() => {
+contentLoader();
   document.getElementById("main").innerHTML = `<div id="superMainContainer" >
   <!-- 1login modal -->
   <!-- 2Signup modal -->
@@ -539,7 +539,7 @@ function home() {
         </div>
   
         <div   class=" container" id="notes">
-          <a          href="https://drive.google.com/file/d/1EiPwYuB6uFEMn6nCZqqFkITEXj8OIXMK/view?usp=sharing"
+          <a          href="https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing"
             target="_blank"  >
           <!-- c++ -->
           <div   class=" card notesCard">
@@ -553,7 +553,7 @@ function home() {
   
           <!-- Javascript -->
           <a
-            href="https://drive.google.com/file/d/1EiPwYuB6uFEMn6nCZqqFkITEXj8OIXMK/view?usp=sharing"
+            href="https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing"
             target="_blank">
           <div   class=" card notesCard">
             <img src="assets/js.png"   class=" size" alt="Notes" />
@@ -565,7 +565,7 @@ function home() {
           </a        >
   
           <!-- c++ -->
-          <a  href="https://drive.google.com/file/d/1EiPwYuB6uFEMn6nCZqqFkITEXj8OIXMK/view?usp=sharing"
+          <a  href="https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing"
             target="_blank" >
           <div   class=" card notesCard">
             <img src="assets/c.png"   class=" size" alt="Notes" />
@@ -599,14 +599,15 @@ function home() {
     </div>
 `;
   document.getElementById("footer").before(main);
-}, 1000);
+
 }
 
 //009  About us page
 function aboutUs() {
+  contentLoader();
   // console.log("aboutUs function called");
   iconChange();
-  setTimeout(() => {
+
     
  
   document.getElementById("main").innerHTML = `
@@ -664,14 +665,13 @@ function aboutUs() {
 </div>
 </main>
 `;
-}, 500);
+
 }
 
 //010  contact us page
 function contactUs() {
   iconChange();
-  setTimeout(() => {
-    
+  contentLoader();
 
   document.getElementById("main").innerHTML = `<main id="main">
   <div class="contact-form ">
@@ -709,13 +709,14 @@ function contactUs() {
         </form>
     </div>
   </main>`;
-}, 500);
+
 }
 
 // 011 section for books
 function books() {
   iconChange();
-setTimeout(() => {
+  contentLoader();
+
   
 
   document.getElementById("main").innerHTML = `
@@ -800,15 +801,14 @@ setTimeout(() => {
 
 
 </main>;`;
-}, 500);
+
 
 }
 
 //012  semesterWisePreviousYearQuestionPaper()
 function semesterWisePreviousYearQuestionPapers(x, y) {
   iconChange();
-setTimeout(() => {
-  
+  contentLoader();
 
   document.getElementById("main").innerHTML = `<main id="main">
   <div id="xSemester">
@@ -837,13 +837,13 @@ setTimeout(() => {
   
   </div>
   </main>`;
-}, 500);
+
 }
 
 //013  live learning function
 function liveLearning() {
   iconChange();
-  setTimeout(() => {
+  contentLoader();
     
  
   document.getElementById(
@@ -872,14 +872,13 @@ function liveLearning() {
   </div>
   </div></main>`;
   }, 1000);
-}, 500);
 }
 
 // 014 BCA Gpt learning function
 function bcaGpt() {
   // console.log("BCA gpt function is called");
   iconChange();
-setTimeout(() => {
+  contentLoader();
   
 
   document.getElementById("main").innerHTML = `<main id="main">
@@ -900,7 +899,7 @@ setTimeout(() => {
   </main>
   
   `;
-}, 500);
+
 }
 
 // 015 submit function
@@ -968,6 +967,7 @@ var competitionArray = [];
 
 const createArray = () => {
   iconChange();
+  contentLoader();
   competitionArray = [];
 
   fetch("https://kontests.net/api/v1/all")
@@ -1163,10 +1163,10 @@ function iconChangeLightDark() {
 
 function getQuestion(){
   iconChange();
-  setTimeout(() => {
+ contentLoader();
 
   fetchQuestion();
-}, 500);
+
 }
 
 function fetchQuestion() {

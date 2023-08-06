@@ -306,7 +306,7 @@ color: white !important;
 
 #notes a {
   text-decoration: none;
-  
+  min-width: 290px;
 }
 /* card body */
 .card-body {
