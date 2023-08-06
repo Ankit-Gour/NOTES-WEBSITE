@@ -23,6 +23,8 @@
   
 //  Appendices
 
+
+
 // auto call arrival() function
 window.onload = () => {
  goToTop();
@@ -36,7 +38,7 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  },3000);
+  },3500);
 });
 
 // Auto change option in header
@@ -395,8 +397,7 @@ function pyq() {
 // 008 what happens on clicking home button
 
 function home() {
- 
-  removeExtraHeader();
+ removeExtraHeader();
   iconChange();
 contentLoader();
   document.getElementById("main").innerHTML = `<div id="superMainContainer" >
@@ -1157,7 +1158,6 @@ function iconChangeLightDark() {
 
 function getQuestion(){
   iconChange();
- contentLoader();
 
   fetchQuestion();
 
@@ -1165,9 +1165,8 @@ function getQuestion(){
 
 function fetchQuestion() {
 
-  document.getElementById(
-    "main"
-  ).innerHTML = ` <main id="main"> <div id="questionContainer" class="questionContainer"></div></main>`;
+  document.getElementById("main").innerHTML = ` <main id="main"> <div id="questionContainer" class="questionContainer"></div></main>`;
+  contentLoader();
   fetch(
     "https://opentdb.com/api.php?amount=1&category=18&difficulty=easy&type=multiple"
   )
