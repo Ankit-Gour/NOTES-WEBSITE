@@ -157,12 +157,24 @@ background: rgb(243, 243, 243);
 /* main element edit */
 
 #main {
-	/* margin-top: 55px; */
+animation: main 0.5s ease 0s 1 forwards ;     
 	opacity: 1;
   height: auto;
-  /* background-color: green; */
-}
 
+}
+@keyframes main {
+  0%{
+    opacity: 0.3;
+  
+  }
+ 90%{
+  opacity: 0.5; 
+ }
+  100%{
+    opacity: 1;
+    
+  }
+}
 #exampleSignUpModal,
 #exampleModal {
   animation: extraHeaderAnimation 1s ease 1ms 1 forwards;

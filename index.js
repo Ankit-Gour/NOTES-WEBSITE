@@ -36,14 +36,13 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  },1);
+  },3000);
 });
 
 // Auto change option in header
 const options = [
   "Books",
   "Previous Year Questions",
-  "BCA GPT",
   "Live Learning Section",
   "Contact Us ",
   "About Us",
@@ -54,7 +53,6 @@ const options = [
 const optionRelatedFunctions = [
   "books()",
   "pyq()",
-  "bcaGpt()",
   "liveLearning()",
   "contactUs()",
   "aboutUs()",
@@ -110,16 +108,12 @@ function changeOptions() {
       "slideOptions"
     ).innerHTML = `<p onclick="${optionRelatedFunctions[7]},removeExtraHeader(),iconChange()">${options[7]}</p>`;
   }, 16000);
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[8]},removeExtraHeader(),iconChange()">${options[8]}</p>`;
-  }, 18000);
+
 }
 changeOptions();
 setInterval(() => {
   changeOptions();
-}, 18000);
+}, 16000);
 
 //001 Resorces for the carousel images
 const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).jpg","assets/c (3).jpg","assets/c (4).png"];
@@ -190,7 +184,7 @@ function extraHeader() {
       <li class=" mx-3 my-2 fs-5  overflow-y-hidden" onclick="home();" >Home </li>
       <li class=" mx-3 my-2 fs-5  h-5 overflow-y-hidden" onclick="books();">Books</li>
       <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="pyq();" id="test">PYQs</li>
-      <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="bcaGpt();">BCA GPT </li>
+
       <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="liveLearning();">Live Learning </li>
       <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="getQuestion();">Quick Revision</li>
       <li class=" mx-3 my-2  fs-5 overflow-y-hidden" onclick="createArray();">Codeathons</li>
@@ -875,32 +869,32 @@ function liveLearning() {
 }
 
 // 014 BCA Gpt learning function
-function bcaGpt() {
-  // console.log("BCA gpt function is called");
-  iconChange();
-  contentLoader();
+// function bcaGpt() {
+//   // console.log("BCA gpt function is called");
+//   iconChange();
+//   contentLoader();
   
 
-  document.getElementById("main").innerHTML = `<main id="main">
-  <div><p class="liveLearningFirstHeading">This is BCA GPT Section here you will find usefull videos related to programming along with their compiler/interpreter</p>
+//   document.getElementById("main").innerHTML = `<main id="main">
+//   <div><p class="liveLearningFirstHeading">This is BCA GPT Section here you will find usefull videos related to programming along with their compiler/interpreter</p>
 
-  <div class="resources">
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZSPZob_1TOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen allow="fullscreen"></iframe>
-  <iframe width="560" height="315" src="https://www.programiz.com/c-programming/online-compiler/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hKB-YGF14SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.programiz.com/javascript/online-compiler/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yGB9jhsEsr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.programiz.com/cpp-programming/online-compiler/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fqF9M92jzUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.programiz.com/python-programming/online-compiler/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+//   <div class="resources">
+//   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZSPZob_1TOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen allow="fullscreen"></iframe>
+//   <iframe width="560" height="315" src="https://www.programiz.com/c-programming/online-compiler/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+//   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hKB-YGF14SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+//   <iframe width="560" height="315" src="https://www.programiz.com/javascript/online-compiler/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+//   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yGB9jhsEsr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+//   <iframe width="560" height="315" src="https://www.programiz.com/cpp-programming/online-compiler/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+//   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fqF9M92jzUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+//   <iframe width="560" height="315" src="https://www.programiz.com/python-programming/online-compiler/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   
-  </div>
-  </div>
-  </main>
+//   </div>
+//   </div>
+//   </main>
   
-  `;
+//   `;
 
-}
+// }
 
 // 015 submit function
 function success() {
