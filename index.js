@@ -1220,8 +1220,11 @@ function contentLoader(){
  
   
   document.getElementById("main").innerHTML=`
-<div id="content">
-  <img id="contentLoader" src="assets/contentLoader.gif"></div>`;
+  <div id="contentLoader" class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>`;
   setTimeout(() => {
      document.getElementById("contentLoader").remove();
   },1000);
