@@ -1158,30 +1158,56 @@ function iconChangeLightDark() {
 
 function getQuestion(){
   iconChange();
-
-  fetchQuestion();
+level();
+  // fetchQuestion();
 
 }
 
-function fetchQuestion() {
+
+// change level text
+
+
+function level(){
+  document.getElementById("main").innerHTML = ` <main id="main"> <div id="questionContainer" class="questionContainer">
+  <div id="levelButton">
+  <button id="easy" onclick="fetchQuestion('easy')">Easy</button>
+  <button id="medium" onclick="fetchQuestion('medium')">Medium</button>
+  <button id="hard"  onclick="fetchQuestion('hard')">Hard</button></div>
+  </div></main>`;
+}
+
+function fetchQuestion(level) {
+console.log('fetch question called');
 
   document.getElementById("main").innerHTML = ` <main id="main"> <div id="questionContainer" class="questionContainer"></div></main>`;
   contentLoader();
   fetch(
-    "https://opentdb.com/api.php?amount=1&category=18&difficulty=easy&type=multiple"
+    `https://opentdb.com/api.php?amount=1&category=18&difficulty=${level}&type=multiple`
   )
     .then((data) => {
       return data.json();
     })
     .then((data) => {
       document.getElementById("main").innerHTML = `<main id="main">
+      <h2 id="level" onclick="level()">Level Of Difficulty is ${level.toUpperCase()}</h2>
     <div id="questionContainer">
+   
     <h4 id="question1">${data.results[0].question}</h4>
     <h5 id="question2">${data.results[0].correct_answer}</h5>
-    <button onclick="fetchQuestion(),removeExtraHeader();" id="question3">Next</button>
+    <button onclick="fetchQuestion('${level}'),removeExtraHeader();" id="question3">Next</button>
     </div>
     </main>`;
-    });
+    }).then(()=>{
+      let previousMessage=document.getElementById("level").innerHTML;
+  
+      setTimeout(() => {
+        document.getElementById("level").innerHTML=`Click to change level`;
+       },5000);
+      setTimeout(() => {
+        document.getElementById("level").innerHTML=previousMessage;
+       },7000);
+    })
+  
 
 }
 
