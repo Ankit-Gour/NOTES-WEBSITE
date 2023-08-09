@@ -400,198 +400,195 @@ function home() {
  removeExtraHeader();
   iconChange();
 contentLoader();
-  document.getElementById("main").innerHTML = `<div id="superMainContainer" >
-  <!-- 1login modal -->
-  <!-- 2Signup modal -->
-  <!-- 3main -->
-  
-  
-     <!--  Login Modal -->
-           <div
-       class=" modal fade"
-     id="exampleModal"
-     tabindex="-1"
-     aria-labelledby="exampleModalLabel"
-     aria-hidden="true"
-   >
-     <div   class=" modal-dialog">
-       <div   class=" modal-content">
-         <div   class=" modal-header">
-           <h1   class=" modal-title fs-5" id="exampleModalLabel">Login</h1>
-           <button
-             type="button"
-               class=" btn-close"
-             data-bs-dismiss="modal"
-             aria-label="Close"
-           ></button>
-         </div>
-         <div   class=" modal-body">
-           <!--modal body  -->
-           <form>
-             <div   class=" mb-3">
-               <label for="exampleInputEmail1"   class=" form-label"
-                 >Email address</label
-               >
-               <input
-                 type="email"
-                   class=" form-control"
-                 id="exampleInputEmail1"
-                 aria-describedby="emailHelp"
-               />
-               <div id="emailHelp"   class=" form-text">
-                 We'll never share your email with anyone else.
-               </div>
+  document.getElementById("main").innerHTML = `
+  <div id="superMainContainer">
+<!-- 1login modal -->
+<!-- 2Signup modal -->
+<!-- 3main -->
+
+
+   <!--  Login Modal -->
+         <div
+     class=" modal fade"
+   id="exampleModal"
+   tabindex="-1"
+   aria-labelledby="exampleModalLabel"
+   aria-hidden="true"
+ >
+   <div   class=" modal-dialog">
+     <div   class=" modal-content">
+       <div   class=" modal-header">
+         <h1   class=" modal-title fs-5" id="exampleModalLabel">Login</h1>
+         <button
+           type="button"
+             class=" btn-close"
+           data-bs-dismiss="modal"
+           aria-label="Close"
+         ></button>
+       </div>
+       <div   class=" modal-body">
+         <!--modal body  -->
+         <form>
+           <div   class=" mb-3">
+             <label for="exampleInputEmail1"   class=" form-label"
+               >Email address</label
+             >
+             <input
+               type="email"
+                 class=" form-control"
+               id="exampleInputEmail1"
+               aria-describedby="emailHelp"
+             />
+             <div id="emailHelp"   class=" form-text">
+               We'll never share your email with anyone else.
              </div>
-             <div   class=" mb-3">
-               <label for="exampleInputPassword1"   class=" form-label"
-                 >Password</label
-               >
-               <input
-                 type="password"
-                   class=" form-control"
-                 id="exampleInputPassword1"
-               />
-               <div   class=" center">
-                 <button type="submit"   class=" cnow my-5">Login</button>
-               </div>
+           </div>
+           <div   class=" mb-3">
+             <label for="exampleInputPassword1"   class=" form-label"
+               >Password</label
+             >
+             <input
+               type="password"
+                 class=" form-control"
+               id="exampleInputPassword1"
+             />
+             <div   class=" center">
+               <button type="submit"   class=" cnow my-5">Login</button>
              </div>
-           </form>
-         </div>
+           </div>
+         </form>
        </div>
      </div>
-          </div>
-  
-   <!--  signup Modal -->
-          <div
-       class=" modal fade"
-     id="exampleSignUpModal"
-     tabindex="-1"
-     aria-labelledby="exampleModalLabel"
-     aria-hidden="true"
-   >
-     <div   class=" modal-dialog">
-       <div   class=" modal-content">
-         <div   class=" modal-header">
-           <h1   class=" modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
-           <button
-             type="button"
-               class=" btn-close"
-             data-bs-dismiss="modal"
-             aria-label="Close"
-           ></button>
-         </div>
-         <div   class=" modal-body">
-           <!--modal body  -->
-           <form>
-             <div   class=" mb-3">
-               <label for="exampleInputEmail1"   class=" form-label"
-                 >Email address</label
-               >
-               <input
-                 type="email"
-                   class=" form-control"
-                 id="exampleInputEmail1"
-                 aria-describedby="emailHelp"
-               />
-               <div id="emailHelp"   class=" form-text">
-                 We'll never share your email with anyone else.
-               </div>
+   </div>
+        </div>
+
+ <!--  signup Modal -->
+        <div
+     class=" modal fade"
+   id="exampleSignUpModal"
+   tabindex="-1"
+   aria-labelledby="exampleModalLabel"
+   aria-hidden="true"
+ >
+   <div   class=" modal-dialog">
+     <div   class=" modal-content">
+       <div   class=" modal-header">
+         <h1   class=" modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+         <button
+           type="button"
+             class=" btn-close"
+           data-bs-dismiss="modal"
+           aria-label="Close"
+         ></button>
+       </div>
+       <div   class=" modal-body">
+         <!--modal body  -->
+         <form>
+           <div   class=" mb-3">
+             <label for="exampleInputEmail1"   class=" form-label"
+               >Email address</label
+             >
+             <input
+               type="email"
+                 class=" form-control"
+               id="exampleInputEmail1"
+               aria-describedby="emailHelp"
+             />
+             <div id="emailHelp"   class=" form-text">
+               We'll never share your email with anyone else.
              </div>
-             <div   class=" mb-3">
-               <label for="exampleInputPassword1"   class=" form-label"
-                 >Password</label
-               >
-               <input
-                 type="password"
-                   class=" form-control"
-                 id="exampleInputPassword1"
-               />
-               <div   class=" center">
-                 <button type="submit"   class=" cnow my-5">Sign Up</button>
-               </div>
+           </div>
+           <div   class=" mb-3">
+             <label for="exampleInputPassword1"   class=" form-label"
+               >Password</label
+             >
+             <input
+               type="password"
+                 class=" form-control"
+               id="exampleInputPassword1"
+             />
+             <div   class=" center">
+               <button type="submit"   class=" cnow my-5">Sign Up</button>
              </div>
-           </form>
-         </div>
+           </div>
+         </form>
        </div>
      </div>
-          </div>
-  
-          <main id="main">
-       
-        <!-- alert -->
-        
-        <!-- carousel -->
-  
-        <div id="carouselContainer">
-          <div>
-            <img
-              src="assets/c (1).jpg"
-              id="carouselImage"
-              onclick="pauseImage()"
-              onmousemove="resumeImage()"
-            />
-          </div>
+   </div>
         </div>
-  
-        <div   class=" container" id="notes">
-          <a          href="https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing"
-            target="_blank"  >
-          <!-- c++ -->
-          <div   class=" card notesCard">
-            <img src="assets/c++.png"   class=" size" alt="Notes" />
-            <div   class=" card-body cardBody">
-              <h5   class=" card-title">C++ Notes</h5>
-              <p   class=" card-text">Get handwritten notes of C++</p>
-              </div>
-            </div>
-          </a        >
-  
-          <!-- Javascript -->
-          <a
-            href="https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing"
-            target="_blank">
-          <div   class=" card notesCard">
-            <img src="assets/js.png"   class=" size" alt="Notes" />
-            <div   class=" card-body cardBody">
-              <h5   class=" card-title">Javascript Notes</h5>
-              <p   class=" card-text">Get handwritten notes of Javascript</p>
-              </div>
-            </div>
-          </a        >
-  
-          <!-- c++ -->
-          <a  href="https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing"
-            target="_blank" >
-          <div   class=" card notesCard">
-            <img src="assets/c.png"   class=" size" alt="Notes" />
-            <div   class=" card-body cardBody">
-              <h5   class=" card-title">C Notes</h5>
-              <p   class=" card-text">Get handwritten notes of C</p>
+
+        <main id="main">
+     
+      <!-- alert -->
+      
+      <!-- carousel -->
+
+      <div id="carouselContainer">
+        <div>
+          <img
+            src="assets/c (1).jpg"
+            id="carouselImage"
+            onclick="pauseImage()"
+            onmousemove="resumeImage()"
+          />
+        </div>
+      </div>
+
+      <div   class=" container" id="notes">
+        <a          href="https://www.cet.edu.in/noticefiles/285_OOPS%20lecture%20notes%20Complete.pdf"
+          target="_blank" download="true" >
+        <!-- c++ -->
+        <div   class=" card notesCard">
+          <img src="assets/c++.png"   class=" size" alt="Notes" />
+          <div   class=" card-body cardBody">
+            <h5   class=" card-title">C++ Notes</h5>
+         
             </div>
           </div>
+        </a        >
+
+        <!-- Javascript -->
+        <a
+          href="https://basponccollege.org/LMS/EMaterial/Science/Comp/HVP/JS%20Notes.pdf"
+          target="_blank">
+        <div   class=" card notesCard">
+          <img src="assets/js.png"   class=" size" alt="Notes" />
+          <div   class=" card-body cardBody">
+            <h5   class=" card-title">Javascript Notes</h5>
+           
+            </div>
+          </div>
+        </a        >
+
+        <!-- c++ -->
+        <a  href="https://www.vssut.ac.in/lecture_notes/lecture1424354156.pdf"
+          target="_blank" >
+        <div   class=" card notesCard">
+          <img src="assets/c.png"   class=" size" alt="Notes" />
+          <div   class=" card-body cardBody">
+            <h5   class=" card-title">C Notes</h5>
+           
+          </div>
         </div>
-      </a>
-  
-        <!-- for the Next and prev button -->
-        <div   class=" container" id="next-prev">
-          <button onclick="next()" id="next">Next</button>
-        </div>
-  
-  
-  
-        <!-- features of The Website -->
-                
-        
-        <div id="features"   class=" container-fluid">
-  
-            <div   class=" featuresHeadingFirst"
-             onclick="arrival()"> <p>Features</p></div>   
-        
-        </div>
-          </main>
-  
-  
-    </div>
+      </div>
+    </a>
+
+    
+      <!-- for the Next and prev button -->
+      <div   class=" container" id="next-prev">
+        <button onclick="next()" id="next">Next</button>
+      </div>
+
+
+
+      <!-- features of The Website -->
+              
+      
+      <div id="features"  class=" container-fluid">    </div>
+        </main>
+
+
+  </div>
 `;
   document.getElementById("footer").before(main);
 
@@ -1200,6 +1197,8 @@ console.log('fetch question called');
     }).then(()=>{
       let previousMessage=document.getElementById("level").innerHTML;
   
+
+
       setTimeout(() => {
         document.getElementById("level").innerHTML=`Click to change level`;
        },5000);
@@ -1285,7 +1284,7 @@ const Second_Semester = {
   paperLinksMid: [
     "https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing",
     "https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing",
-    "https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing",
+    "https://drive.google.com/file/d/1H70utzxoZEmNrntoxGbwAT_BeXLepYux/view?usp=sharing",
     "https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing",
   ],
   paperLinksFinal: [
