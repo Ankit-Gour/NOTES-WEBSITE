@@ -38,7 +38,8 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     document.getElementById("preloader").remove();
-  },3500);
+  },1);
+  // 3500
 });
 
 // Auto change option in header
@@ -804,10 +805,11 @@ function semesterWisePreviousYearQuestionPapers(x, y) {
 
   document.getElementById("main").innerHTML = `<main id="main">
   <div id="xSemester">
+
   <p id="sNumber">${y} Semester Academic Year 2023</p>
 
   <div id="mid1Container">
-  <h2 id="mid1Heading">Mid 1</h2>
+  <h2 id="mid1Heading">Mid Semester Exam</h2>
   <ul>
   <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksMid[0]}">${x.paperNames[0]}</a></li>
   <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksMid[1]}">${x.paperNames[1]}</a></li>
@@ -818,7 +820,7 @@ function semesterWisePreviousYearQuestionPapers(x, y) {
   </div>
 
   <div id="mid1Container">
-  <h2 id="mid1Heading">Final</h2>
+  <h2 id="mid1Heading">Final Exam</h2>
   <ul>
   <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksFinal[0]}">${x.paperNames[0]}</a></li>
   <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksFinal[1]}">${x.paperNames[1]}</a></li>
@@ -826,7 +828,7 @@ function semesterWisePreviousYearQuestionPapers(x, y) {
   <li class="papers"><a class="paperLink"  download="true"  href="${x.paperLinksFinal[3]}">${x.paperNames[3]}</a></li>
   </ul>
   </div>
-  
+  <p onclick="pyq(),removeExtraHeader()" id="selectSemester" class="text-dark">Select Semester </p>
   </div>
   </main>`;
 
