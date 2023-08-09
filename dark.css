@@ -45,7 +45,7 @@ body{
     animation: fade 1s ease 0s 1 forwards;
 }
 
-.featureBox,.messageInsideFeaturesBox,.contact-form{
+.featureBox,.messageInsideFeaturesBox,.contact-form,.pyqCard{
     background-color:var(--black);
     color: var(--white);
     animation: fade 0.01s ease 0s 1 forwards;

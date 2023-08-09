@@ -788,7 +788,7 @@ display: flex;
 #pyqSectionHeading {
 	position: absolute;
 	font-size: 24px;
-	margin-top: -69px;
+	margin-top:10px;
 }
 #pyqContainer {
   overflow: hidden;
@@ -805,16 +805,19 @@ display: flex;
 
 #pyqContainer {
   height: auto;
+ 
+  width: 100vw;
  }
 
 .pyqCard {
-  width: 300px;
-  /* background-color: white; */
-  margin: 10px 10px;
+  margin: 20px auto;
+  width: 100%;
+ background-color: grey;
   border-radius: 10px;
   height: 200px;
-  padding: 10px;
+
  }
+
 .cardBody {
   font-size: 18px;
   padding: 10px;
@@ -823,7 +826,12 @@ display: flex;
   justify-content: space-around;
   align-items: center;
 ;}
+.getPyq{
+  height: auto;
+  width: 100%;
+  
 
+}
 /* Features of the website in home page under main  */
 
 #features {

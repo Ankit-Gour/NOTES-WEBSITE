@@ -326,8 +326,8 @@ function pyq() {
       
     <a  target="_blank"  style="cursor:pointer;"onclick="semesterWisePreviousYearQuestionPapers(First_Semester,'First'),iconChange(),removeExtraHeader()"  >
     <div class="card-body cardBody">
-        <h5 class="card-title">First Semester PYQs</h5>
-        <p class="card-text">Get yearwise Previous Year Questions of First Semester</p>
+        <h5 class="card-title">First Semester </h5>
+        <p class="card-text getPyq" >Get yearwise Previous Year Questions of First Semester</p>
         </div>
         </a>
     </div>
@@ -337,8 +337,8 @@ function pyq() {
       
     <a  target="_blank"  style="cursor:pointer;"onclick="semesterWisePreviousYearQuestionPapers(Second_Semester,'Second'),iconChange(),removeExtraHeader()" >
     <div class="card-body cardBody">
-        <h5 class="card-title">Second Semester PYQs</h5>
-        <p class="card-text">Get yearwise Previous Year Questions of Second Semester</p>
+        <h5 class="card-title">Second Semester </h5>
+        <p class="card-text getPyq" >Get yearwise Previous Year Questions of Second Semester</p>
         </div>
         </a>
     </div>
@@ -347,8 +347,8 @@ function pyq() {
     
     <a  target="_blank"  style="cursor:pointer;"onclick="semesterWisePreviousYearQuestionPapers(Third_Semester,'Third'),iconChange(),removeExtraHeader()" >
     <div class="card-body cardBody">
-    <h5 class="card-title">Third Semester PYQs</h5>
-    <p class="card-text">Get yearwise Previous Year Questions of Third Semester</p>
+    <h5 class="card-title">Third Semester </h5>
+    <p class="card-text getPyq" >Get yearwise Previous Year Questions of Third Semester</p>
     </div>
     </a>
     </div>
@@ -357,8 +357,8 @@ function pyq() {
     
     <a  target="_blank"  style="cursor:pointer;"onclick="semesterWisePreviousYearQuestionPapers(Fourth_Semester,'Fourth'),iconChange(),removeExtraHeader()">
     <div class="card-body cardBody">
-    <h5 class="card-title">Fourth Semester PYQs</h5>
-    <p class="card-text">Get yearwise Previous Year Questions of Fourth Semester</p>
+    <h5 class="card-title">Fourth Semester </h5>
+    <p class="card-text getPyq" >Get yearwise Previous Year Questions of Fourth Semester</p>
     </div>
     </a>
     </div>
@@ -368,8 +368,8 @@ function pyq() {
 
     <a  target="_blank"  style="cursor:pointer;"onclick="semesterWisePreviousYearQuestionPapers(Fifth_Semester,'Fifth'),iconChange(),removeExtraHeader()">
       <div class="card-body cardBody">
-        <h5 class="card-title">Fifth Semester PYQs</h5>
-        <p class="card-text">Get yearwise Previous Year Questions of Fifth Semester</p>
+        <h5 class="card-title">Fifth Semester </h5>
+        <p class="card-text getPyq" >Get yearwise Previous Year Questions of Fifth Semester</p>
         </div>
         </a>
     </div>
@@ -379,8 +379,8 @@ function pyq() {
       
     <a  target="_blank"  style="cursor:pointer;" onclick="semesterWisePreviousYearQuestionPapers(Sixth_Semester,'Sixth'),iconChange(),removeExtraHeader()" >
       <div class="card-body cardBody">
-        <h5 class="card-title">Sixth Semester PYQs</h5>
-        <p class="card-text">Get yearwise Previous Year Questions of Sixth Semester</p>
+        <h5 class="card-title">Sixth Semester </h5>
+        <p class="card-text getPyq" >Get yearwise Previous Year Questions of Sixth Semester</p>
         </div>
         </a>
         </div>
