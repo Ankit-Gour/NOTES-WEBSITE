@@ -550,7 +550,7 @@ contentLoader();
         <!-- Javascript -->
         <a
           href="https://basponccollege.org/LMS/EMaterial/Science/Comp/HVP/JS%20Notes.pdf"
-          target="_blank">
+          target="_blank" download="true">
         <div   class=" card notesCard">
           <img src="assets/js.png"   class=" size" alt="Notes" />
           <div   class=" card-body cardBody">
@@ -562,7 +562,7 @@ contentLoader();
 
         <!-- c++ -->
         <a  href="https://www.vssut.ac.in/lecture_notes/lecture1424354156.pdf"
-          target="_blank" >
+          target="_blank" download="true">
         <div   class=" card notesCard">
           <img src="assets/c.png"   class=" size" alt="Notes" />
           <div   class=" card-body cardBody">
@@ -809,10 +809,10 @@ function semesterWisePreviousYearQuestionPapers(x, y) {
   <div id="mid1Container">
   <h2 id="mid1Heading">Mid 1</h2>
   <ul>
-  <li class="papers"><a class="paperLink" href="${x.paperLinksMid[0]}">${x.paperNames[0]}</a></li>
-  <li class="papers"><a class="paperLink" href="${x.paperLinksMid[1]}">${x.paperNames[1]}</a></li>
-  <li class="papers"><a class="paperLink" href="${x.paperLinksMid[2]}">${x.paperNames[2]}</a></li>
-  <li class="papers"><a class="paperLink" href="${x.paperLinksMid[3]}">${x.paperNames[3]}</a></li>
+  <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksMid[0]}">${x.paperNames[0]}</a></li>
+  <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksMid[1]}">${x.paperNames[1]}</a></li>
+  <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksMid[2]}">${x.paperNames[2]}</a></li>
+  <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksMid[3]}">${x.paperNames[3]}</a></li>
 
   </ul>
   </div>
@@ -820,10 +820,10 @@ function semesterWisePreviousYearQuestionPapers(x, y) {
   <div id="mid1Container">
   <h2 id="mid1Heading">Final</h2>
   <ul>
-  <li class="papers"><a class="paperLink" href="${x.paperLinksFinal[0]}">${x.paperNames[0]}</a></li>
-  <li class="papers"><a class="paperLink" href="${x.paperLinksFinal[1]}">${x.paperNames[1]}</a></li>
-  <li class="papers"><a class="paperLink" href="${x.paperLinksFinal[2]}">${x.paperNames[2]}</a></li>
-  <li class="papers"><a class="paperLink" href="${x.paperLinksFinal[3]}">${x.paperNames[3]}</a></li>
+  <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksFinal[0]}">${x.paperNames[0]}</a></li>
+  <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksFinal[1]}">${x.paperNames[1]}</a></li>
+  <li class="papers"><a class="paperLink"   download="true" href="${x.paperLinksFinal[2]}">${x.paperNames[2]}</a></li>
+  <li class="papers"><a class="paperLink"  download="true"  href="${x.paperLinksFinal[3]}">${x.paperNames[3]}</a></li>
   </ul>
   </div>
   
