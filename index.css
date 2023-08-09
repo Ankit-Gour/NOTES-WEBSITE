@@ -650,6 +650,7 @@ display: flex;
  }
 .papers {
   font-size: 12px;
+  line-height:30px;
  }
 
 .paperLink {
