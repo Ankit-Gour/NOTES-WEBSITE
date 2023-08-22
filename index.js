@@ -1285,7 +1285,7 @@ const Second_Semester = {
   ],
   paperLinksMid: [
     "https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing",
-    "https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing",
+    "https://drive.google.com/file/d/1--dYmva81j11e0l7VjAHJDV7LyUakClu/view?usp=sharing",
     "https://drive.google.com/file/d/1H70utzxoZEmNrntoxGbwAT_BeXLepYux/view?usp=sharing",
     "https://drive.google.com/file/d/1pFZwpCRbvEXB_RvoCSOAnESvWSxnUHIe/view?usp=sharing",
   ],
