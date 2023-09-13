@@ -30,6 +30,7 @@ window.onload = () => {
  goToTop();
   setTimeout(() => {
     arrival();
+    darkMode();
   }, 2000);
 };
 
