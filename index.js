@@ -39,80 +39,80 @@ window.addEventListener("load", () => {
 });
 
 // Auto change option in header
-const options = [
-  "Books",
-  "Previous Year Questions",
-  "Live Learning Section",
-  "Contact Us ",
-  "About Us",
-  "Home",
-  "Codeathons",
-  "Quick Revision",
-];
-const optionRelatedFunctions = [
-  "books()",
-  "pyq()",
-  "liveLearning()",
-  "contactUs()",
-  "aboutUs()",
-  "home()",
-  "createArray()",
-  "getQuestion()",
-];
-document.getElementById(
-  "slideOptions"
-).innerHTML = `<p onclick="${optionRelatedFunctions[6]},removeExtraHeader(),iconChange()">${options[6]}</p>`;
-document.getElementById("slideOptions").style =
-  "animation: slideOptions 2s ease 0s 1 forwards;";
-function changeOptions() {
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[0]},removeExtraHeader(),iconChange()">${options[0]}</p>`;
-    document.getElementById("slideOptions").style =
-      "animation: slideOptions 2s ease 0s 1 forwards;";
-  }, 2000);
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[1]},removeExtraHeader(),iconChange()">${options[1]}</p>`;
-  }, 4000);
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[2]},removeExtraHeader(),iconChange()">${options[2]}</p>`;
-  }, 6000);
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[3]},removeExtraHeader(),iconChange()">${options[3]}</p>`;
-  }, 8000);
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[4]},removeExtraHeader(),iconChange()">${options[4]}</p>`;
-  }, 10000);
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[5]},removeExtraHeader(),iconChange()">${options[5]}</p>`;
-  }, 12000);
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[6]},removeExtraHeader(),iconChange()">${options[6]}</p>`;
-  }, 14000);
-  setTimeout(() => {
-    document.getElementById(
-      "slideOptions"
-    ).innerHTML = `<p onclick="${optionRelatedFunctions[7]},removeExtraHeader(),iconChange()">${options[7]}</p>`;
-  }, 16000);
+// const options = [
+//   "Books",
+//   "Previous Year Questions",
+//   "Live Learning Section",
+//   "Contact Us ",
+//   "About Us",
+//   "Home",
+//   "Codeathons",
+//   "Quick Revision",
+// ];
+// const optionRelatedFunctions = [
+//   "books()",
+//   "pyq()",
+//   "liveLearning()",
+//   "contactUs()",
+//   "aboutUs()",
+//   "home()",
+//   "createArray()",
+//   "getQuestion()",
+// ];
+// document.getElementById(
+//   "slideOptions"
+// ).innerHTML = `<p onclick="${optionRelatedFunctions[6]},removeExtraHeader(),iconChange()">${options[6]}</p>`;
+// document.getElementById("slideOptions").style =
+//   "animation: slideOptions 2s ease 0s 1 forwards;";
+// function changeOptions() {
+//   setTimeout(() => {
+//     document.getElementById(
+//       "slideOptions"
+//     ).innerHTML = `<p onclick="${optionRelatedFunctions[0]},removeExtraHeader(),iconChange()">${options[0]}</p>`;
+//     document.getElementById("slideOptions").style =
+//       "animation: slideOptions 2s ease 0s 1 forwards;";
+//   }, 2000);
+//   setTimeout(() => {
+//     document.getElementById(
+//       "slideOptions"
+//     ).innerHTML = `<p onclick="${optionRelatedFunctions[1]},removeExtraHeader(),iconChange()">${options[1]}</p>`;
+//   }, 4000);
+//   setTimeout(() => {
+//     document.getElementById(
+//       "slideOptions"
+//     ).innerHTML = `<p onclick="${optionRelatedFunctions[2]},removeExtraHeader(),iconChange()">${options[2]}</p>`;
+//   }, 6000);
+//   setTimeout(() => {
+//     document.getElementById(
+//       "slideOptions"
+//     ).innerHTML = `<p onclick="${optionRelatedFunctions[3]},removeExtraHeader(),iconChange()">${options[3]}</p>`;
+//   }, 8000);
+//   setTimeout(() => {
+//     document.getElementById(
+//       "slideOptions"
+//     ).innerHTML = `<p onclick="${optionRelatedFunctions[4]},removeExtraHeader(),iconChange()">${options[4]}</p>`;
+//   }, 10000);
+//   setTimeout(() => {
+//     document.getElementById(
+//       "slideOptions"
+//     ).innerHTML = `<p onclick="${optionRelatedFunctions[5]},removeExtraHeader(),iconChange()">${options[5]}</p>`;
+//   }, 12000);
+//   setTimeout(() => {
+//     document.getElementById(
+//       "slideOptions"
+//     ).innerHTML = `<p onclick="${optionRelatedFunctions[6]},removeExtraHeader(),iconChange()">${options[6]}</p>`;
+//   }, 14000);
+//   setTimeout(() => {
+//     document.getElementById(
+//       "slideOptions"
+//     ).innerHTML = `<p onclick="${optionRelatedFunctions[7]},removeExtraHeader(),iconChange()">${options[7]}</p>`;
+//   }, 16000);
 
-}
-changeOptions();
-setInterval(() => {
-  changeOptions();
-}, 16000);
+// }
+// changeOptions();
+// setInterval(() => {
+//   changeOptions();
+// }, 16000);
 
 //001 Resorces for the carousel images
 const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).jpg","assets/c (3).jpg","assets/c (4).png"];
