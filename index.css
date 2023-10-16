@@ -93,17 +93,7 @@ header {
 #extra-header {
   animation: extraHeaderAnimation 0.5s ease 1ms 1 forwards;
 }
-#extra-header li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  width: auto;
-  height: 30px;
-  padding: 5px;
-  opacity: 0.8;
-  color: black;
-}
+
 
 #extra-header li:hover {
   cursor: pointer;
