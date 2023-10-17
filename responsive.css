@@ -382,25 +382,7 @@ border-radius: 10px;
   }
   
 }
-@media only screen and (max-width:1500px) {
 
-#extra-header li {
-  /* background: red; */
- display: inline-block;
- margin: 10px 10px;
- background-color: grey;
- padding: 5px 10px;
- font-size: 10px;
- border-radius: 10px;
- color: white;
-
-}
-#extra-header {
-display: flex;
-justify-content:space-around;
-align-items: center;
-}
-}
 
 /* quick revision */
 @media only screen and (max-width:660px) {
