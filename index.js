@@ -177,15 +177,15 @@ function extraHeader() {
     <u id="options-in-extra-header" onclick="pauseImage()"
     onmousemove="resumeImage()"">
     
-    <li class=" mx-3 my-2  overflow-y-hidden" onclick="home();" >Home </li>
-    <li class=" mx-3 my-2  overflow-y-hidden" onclick="liveLearning();">Learning </li>
-    <li class=" mx-3 my-2  overflow-y-hidden" onclick="pyq();" id="test">PYQs</li>
+    <li class="  overflow-y-hidden" onclick="home();" >Home </li>
+    <li class="" onclick="liveLearning();">Learning </li>
+    <li class="" onclick="pyq();" id="test">PYQs</li>
     
-          <li class=" mx-3 my-2  overflow-y-hidden" onclick="getQuestion();">Quick Revision</li>
-      <li class=" mx-3 my-2  h-5 overflow-y-hidden" onclick="books();">Books</li>
-      <li class=" mx-3 my-2  overflow-y-hidden" onclick="createArray();">Codeathons</li>
-      <li class=" mx-3 my-2  overflow-y-hidden" onclick="contactUs();">Contact Us</li>
-      <li class=" mx-3 my-2  overflow-y-hidden" onclick="aboutUs();">About Us</li>
+          <li class="" onclick="getQuestion();">Quick Revision</li>
+      <li class="dden" onclick="books();">Books</li>
+      <li class="" onclick="createArray();">Codeathons</li>
+      <li class="" onclick="contactUs();">Contact Us</li>
+      <li class="" onclick="aboutUs();">About Us</li>
     </u>
     <div id="login-signup">
     <button type="button" class="mx-3 my-5 cnow" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="iconChange()">Login
@@ -204,7 +204,7 @@ function extraHeader() {
 //003 to remove extra header
 function removeExtraHeader() {
   try {
-    // document.getElementById("extra-header").remove();
+    document.getElementById("extra-header").remove();
   } catch (e) {}
 }
 

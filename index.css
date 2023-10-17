@@ -90,19 +90,26 @@ header {
 }
 
 /* extra header section */
-#extra-header {
+/* #extra-header {
   animation: extraHeaderAnimation 0.5s ease 1ms 1 forwards;
-}
+ 
+} */
+
+#extra-header li{
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px 1px 15px 1px;
+  width: 200px;
+  }
 
 
-#extra-header li:hover {
-  cursor: pointer;
-  font-weight: 600;
-}
 
 #options-in-extra-header {
-  /* background-color: red; */
-
+  
   text-decoration: none;
 }
 
@@ -1025,13 +1032,22 @@ header {
     opacity: 1;
   }
 }
-
+#extra-header {
+  animation: extraHeaderAnimation 1s ease 0s 1 forwards;
+ 
+}
 @keyframes extraHeaderAnimation {
-  from {
-    opacity: 0;
+  0% {
+   
+   width: 0px;
   }
-  to {
-    opacity: 1;
+  50% {
+
+    width: 50%;
+  }
+  100% {
+ 
+    width: 100%;
   }
 }
 
