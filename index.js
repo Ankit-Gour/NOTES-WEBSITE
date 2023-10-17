@@ -23,22 +23,11 @@
 
 
 
-// auto call arrival() function
-window.onload = () => {
- goToTop();
-<<<<<<< HEAD
-  setTimeout(() => {
-    arrival();
- 
-  }, 2000);
-=======
 
->>>>>>> d6dd97832c53d6388a5e0ce0fcd83aeeae02ffd7
-};
 
 // loader auto vanish
 window.addEventListener("load", () => {
-
+  goToTop();
   setTimeout(() => {
     document.getElementById("preloader").remove();
   },1);
