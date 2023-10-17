@@ -204,7 +204,7 @@ function extraHeader() {
 //003 to remove extra header
 function removeExtraHeader() {
   try {
-    // document.getElementById("extra-header").remove();
+    document.getElementById("extra-header").remove();
   } catch (e) {}
 }
 
