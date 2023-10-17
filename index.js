@@ -1094,6 +1094,7 @@ function darkMode() {
   ) {
     // console.log("if");
     darkCss.href = "dark.css";
+   document.getElementById("open-close-icon").src="assets/openForDarkMode.png";
   } else {
     setTimeout(() => {
       darkCss.href = ``;
