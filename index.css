@@ -57,12 +57,13 @@ header {
 #light-dark-icon {
   width: 42px;
   height: 42px;
-  border-radius: 21px;
+  border-radius:50%;
 }
 
 #open-close-icon {
-  width: 27px;
-  height: 27px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 /* title editing */
 
@@ -104,6 +105,12 @@ header {
   padding: 5px 10px;
   border-radius: 15px 1px 15px 1px;
   width: 200px;
+  
+  }
+
+#extra-header li:hover{
+ cursor: pointer;
+ color: rgb(30, 184, 231) !important;
   }
 
 

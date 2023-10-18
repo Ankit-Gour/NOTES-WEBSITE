@@ -8,7 +8,7 @@
 
 
 
-header,#next,#footer, .codingCard,#successCard,#aboutUs,.modal-body,.modal-header,#goTop
+#next,#footer, .codingCard,#successCard,#aboutUs,.modal-body,.modal-header,#goTop
 
 {
     background-color:var(--black);
@@ -16,7 +16,9 @@ header,#next,#footer, .codingCard,#successCard,#aboutUs,.modal-body,.modal-heade
     
 }
 
-
+header{
+    background-color: rgb(68, 68, 68);
+}
 
 
 

@@ -111,7 +111,7 @@ window.addEventListener("load", () => {
 // }, 16000);
 
 //001 Resorces for the carousel images
-const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (4).jpg","assets/c (3).jpg","assets/c (4).png"];
+const sources = ["assets/c (1).jpg", "assets/c (2).jpg", "assets/c (3).jpg","assets/c (4).jpg","assets/c (5).png","assets/c (6).png"];
 changeCarouselImages();
 function changeCarouselImages() {
  
@@ -155,6 +155,7 @@ function pauseImage() {
   sources[2] = document.getElementById("carouselImage").src;
   sources[3] = document.getElementById("carouselImage").src;
   sources[4] = document.getElementById("carouselImage").src;
+  sources[5] = document.getElementById("carouselImage").src;
 }
 
 function resumeImage() {
@@ -165,7 +166,8 @@ function resumeImage() {
   sources[1] = "assets/c (2).jpg";
   sources[2] = "assets/c (3).jpg";
   sources[3] = "assets/c (4).jpg";
-  sources[4] = "assets/c (4).png";
+  sources[4] = "assets/c (5).png";
+  sources[5] = "assets/c (6).png";
 }
 
 // 002 adding extra header
@@ -294,6 +296,7 @@ function iconChange() {
     a.src == "http://127.0.0.1:5500/assets/open.png" ||
     a.src == "https://ankit-gour.github.io/bcaAspirants/assets/open.png"
   ) {
+  
     a.src = "assets/close.png";
     extraHeader();
     // console.log("if");
@@ -303,6 +306,7 @@ function iconChange() {
     removeExtraHeader();
 
     a.src = "assets/open.png";
+   
   }
 }
 
@@ -1084,6 +1088,7 @@ const liveSoon = () => {
 
 // darkMode()
 
+var dark=false;
 function darkMode() {
   let b = document.getElementById("light-dark-icon");
 
@@ -1094,12 +1099,16 @@ function darkMode() {
   ) {
     // console.log("if");
     darkCss.href = "dark.css";
-   document.getElementById("open-close-icon").src="assets/openForDarkMode.png";
+    dark=true;
+ 
   } else {
+    dark=false;
     setTimeout(() => {
       darkCss.href = ``;
     }, 10);
   }
+  console.log(dark);
+  
 }
 
 function iconChangeLightDark() {
