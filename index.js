@@ -588,7 +588,7 @@ contentLoader();
 
   </div>
 `;
-  document.getElementById("footer").before(main);
+
 
 }
 
@@ -1188,6 +1188,14 @@ function goToTop() {
   console.log("gotop is called");
   document.getElementById("goTop").click();
 }
+
+// setting animation for go to top button
+document.getElementById("goTop").childNodes[0].addEventListener("mouseover",()=>{
+  document.getElementById("goTop").childNodes[0].src="assets/changeTop.png";
+})
+document.getElementById("goTop").childNodes[0].addEventListener("mouseout",()=>{
+  document.getElementById("goTop").childNodes[0].src="assets/top.png";
+})
 
 
 function socialMedia(platform){

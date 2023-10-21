@@ -611,31 +611,32 @@ header {
 }
 
 .fa-facebook {
-  background: #3861ba;
+  background: #000000;
   color: white;
 }
 
 .fa-twitter {
-  background: #55acee;
+  background: #000000;
   color: white;
 }
 .fa-whatsapp {
-  background: #0ab426;
+  background: #000000;
   color: white;
 }
 
 .fa-linkedin {
-  background: #007bb5;
+  background: #000000;
   color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
+  background: #010101;
   color: white;
 }
 .fa-github {
   background: #000000;
   color: white;
+ 
 }
 
 #socialMediaIcons {
@@ -942,18 +943,14 @@ header {
 }
 
 /* go to top button */
-#goTop {
-  width: 100px;
-  height: auto;
-  text-decoration: none;
-  color: black;
-  background-color: grey;
-  padding: 5px 10px;
-  margin-bottom: 3px;
-  display: block;
-  margin-top: 20px;
-  border-radius: 1px 24px 24px 0px;
+#goTop img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
+#goTop {
+  display: block;
+  margin-left: 90%}
 
 /* contentLoader */
 
