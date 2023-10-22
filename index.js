@@ -588,9 +588,19 @@ contentLoader();
 
   </div>
 `;
-
+let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Gallery</h>
+  <div class="" id="photoContainer">
+  <img src="assets/dh1.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh2.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh3.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh4.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh5.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh6.jpg"  class="images mx-3 my-4">
+  </div>`
+  document.getElementById("main").innerHTML +=a;
 
 }
+
 
 //009  About us page
 function aboutUs() {
@@ -1230,20 +1240,20 @@ function contentLoader(){
 }
 
 // photogallery
-const gallery=()=>{
+// const gallery=()=>{
   
-  let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Gallery</h>
-  <div class="" id="photoContainer">
-  <img src="assets/dh1.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh2.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh3.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh4.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh5.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh6.jpg"  class="images mx-3 my-4">
-  </div>`
-  document.getElementById("main").innerHTML +=a;
-}
-gallery();
+//   let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Gallery</h>
+//   <div class="" id="photoContainer">
+//   <img src="assets/dh1.jpg"  class="images mx-3 my-4">
+//   <img src="assets/dh2.jpg"  class="images mx-3 my-4">
+//   <img src="assets/dh3.jpg"  class="images mx-3 my-4">
+//   <img src="assets/dh4.jpg"  class="images mx-3 my-4">
+//   <img src="assets/dh5.jpg"  class="images mx-3 my-4">
+//   <img src="assets/dh6.jpg"  class="images mx-3 my-4">
+//   </div>`
+//   document.getElementById("main").innerHTML +=a;
+// }
+
 
 
 // Appendices
