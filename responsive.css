@@ -253,7 +253,7 @@ border-radius: 10px;
 /* notes card */
 @media only screen and (max-width: 799px) {
   #notes {
-    height: 850px;
+    height: auto;
   }
 }
 
