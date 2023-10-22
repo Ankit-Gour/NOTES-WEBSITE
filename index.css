@@ -950,7 +950,8 @@ header {
 }
 #goTop {
   display: block;
-  margin-left: 90%}
+  margin:20px 30px;
+}
 
 /* contentLoader */
 
