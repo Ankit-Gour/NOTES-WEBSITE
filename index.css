@@ -952,7 +952,12 @@ header {
   display: block;
   margin:20px 30px;
 }
-
+#photoGallery{
+  /* background-color: red; */
+  display: block;
+  font-size: 20px;
+  padding: 30px 20px;
+}
 /* contentLoader */
 
 #contentLoader {

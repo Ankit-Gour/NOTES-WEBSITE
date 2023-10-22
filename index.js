@@ -1231,7 +1231,7 @@ function contentLoader(){
 
 // photogallery
 const gallery=()=>{
-  document.getElementById("main").innerHTML =`<h>Photo Galery</h>
+  document.getElementById("main").innerHTML =`<h id="photoGallery">Photo Gallery</h>
   <div class="" id="photoContainer">
   <img src="assets/dh1.jpg" width="300px" class="mx-3 my-4">
   <img src="assets/dh1.jpg" width="300px" class="mx-3 my-4">
