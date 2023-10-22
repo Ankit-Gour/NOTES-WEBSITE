@@ -1231,7 +1231,8 @@ function contentLoader(){
 
 // photogallery
 const gallery=()=>{
-  document.getElementById("main").innerHTML =`<h id="photoGallery">Photo Gallery</h>
+  
+  let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Gallery</h>
   <div class="" id="photoContainer">
   <img src="assets/dh1.jpg"  class="images mx-3 my-4">
   <img src="assets/dh2.jpg"  class="images mx-3 my-4">
@@ -1239,11 +1240,10 @@ const gallery=()=>{
   <img src="assets/dh4.jpg"  class="images mx-3 my-4">
   <img src="assets/dh5.jpg"  class="images mx-3 my-4">
   <img src="assets/dh6.jpg"  class="images mx-3 my-4">
-  </div>
-  `;
+  </div>`
+  document.getElementById("main").innerHTML +=a;
 }
 gallery();
-
 
 
 // Appendices
