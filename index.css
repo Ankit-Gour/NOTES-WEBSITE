@@ -953,10 +953,27 @@ header {
   margin:20px 30px;
 }
 #photoGallery{
-  /* background-color: red; */
+
   display: block;
   font-size: 20px;
   padding: 30px 20px;
+}
+
+#photoContainer{
+  width: 100vw;
+  background-color:rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images{
+  min-width:200px;
+  max-width:500px;
+  max-height: 300px;
+  /* min-height: 300px; */
+  
 }
 /* contentLoader */
 
@@ -1020,14 +1037,7 @@ header {
 }
 
 
-#photoContainer{
-  width: 100vw;
-  background-color:rgb(136, 195, 217);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 /* Animations Section */
 
 /* features arrival animation */

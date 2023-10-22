@@ -1233,12 +1233,12 @@ function contentLoader(){
 const gallery=()=>{
   document.getElementById("main").innerHTML =`<h id="photoGallery">Photo Gallery</h>
   <div class="" id="photoContainer">
-  <img src="assets/dh1.jpg" width="500px" height="300px" class="mx-3 my-4">
-  <img src="assets/dh2.jpg" width="500px" height="300px" class="mx-3 my-4">
-  <img src="assets/dh3.jpg" width="500px" height="300px" class="mx-3 my-4">
-  <img src="assets/dh4.jpg" width="500px" height="300px" class="mx-3 my-4">
-  <img src="assets/dh5.jpg" width="500px" height="300px" class="mx-3 my-4">
-  <img src="assets/dh6.jpg" width="500px" height="300px" class="mx-3 my-4">
+  <img src="assets/dh1.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh2.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh3.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh4.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh5.jpg"  class="images mx-3 my-4">
+  <img src="assets/dh6.jpg"  class="images mx-3 my-4">
   </div>
   `;
 }
