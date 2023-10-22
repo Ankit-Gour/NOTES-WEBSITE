@@ -1229,8 +1229,20 @@ function contentLoader(){
   },1000);
 }
 
-
-
+// photogallery
+const gallery=()=>{
+  document.getElementById("main").innerHTML =`<h>Photo Galery</h>
+  <div class="" id="photoContainer">
+  <img src="assets/dh1.jpg" width="300px" class="mx-3 my-4">
+  <img src="assets/dh1.jpg" width="300px" class="mx-3 my-4">
+  <img src="assets/dh1.jpg" width="300px" class="mx-3 my-4">
+  <img src="assets/dh1.jpg" width="300px" class="mx-3 my-4">
+  <img src="assets/dh1.jpg" width="300px" class="mx-3 my-4">
+  <img src="assets/dh1.jpg" width="300px" class="mx-3 my-4">
+  </div>
+  `;
+}
+gallery();
 
 
 
