@@ -393,6 +393,7 @@ function pyq() {
 }
 
 // 008 what happens on clicking home button
+let x = Math.floor((Math.random() * 14) + 1);
 
 function home() {
  removeExtraHeader();
@@ -590,18 +591,29 @@ contentLoader();
 `;
 let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Gallery</h>
   <div class="" id="photoContainer">
-  <img src="assets/dh1.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh2.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh3.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh4.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh5.jpg"  class="images mx-3 my-4">
-  <img src="assets/dh6.jpg"  class="images mx-3 my-4">
+  <img  class="images mx-3 my-4" src="assets/p (5).png">
+  <img  class="images mx-3 my-4" src="assets/p (4).png">
+  <img  class="images mx-3 my-4" src="assets/p (1).png">
+  <img  class="images mx-3 my-4" src="assets/p (2).png">
+  <img  class="images mx-3 my-4" src="assets/p (3).png">
+  <img  class="images mx-3 my-4" src="assets/p (6).png">
+  <img  class="images mx-3 my-4" src="assets/p (7).png">
+  <img  class="images mx-3 my-4" src="assets/p (8).png">
+  <img  class="images mx-3 my-4" src="assets/p (9).png">
+  <img  class="images mx-3 my-4" src="assets/p (10).png">
+  <img  class="images mx-3 my-4" src="assets/p (11).png">
+  <img  class="images mx-3 my-4" src="assets/p (12).png">
+  <img  class="images mx-3 my-4" src="assets/p (13).png">
+  <img  class="images mx-3 my-4" src="assets/p (14).png">
+  
+
+
   </div>`
   document.getElementById("main").innerHTML +=a;
 
 }
 
-
+home();
 //009  About us page
 function aboutUs() {
   contentLoader();
