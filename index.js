@@ -592,91 +592,90 @@ contentLoader();
 let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Gallery</h>
   <div class="" id="photoContainer">
   <figure>
-        <img class="images mx-3 my-4"  src="assets/p (3).png" onclick="enlarge('assets/p (3).png')">
+        <img class="images mx-3 my-4"  src="assets/p (3).png" onclick="enlarge('assets/p (3).png','The beauty of our departement')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">The beauty of our departement</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (1).png" onclick="enlarge('assets/p (1).png')">
+        <img class="images mx-3 my-4" src="assets/p (1).png" onclick="enlarge('assets/p (1).png','Close view of Department of Computer Sciences and Application')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Close view of Department of Computer Sciences and Application</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (2).png" onclick="enlarge('assets/p (2).png')">
+        <img class="images mx-3 my-4" src="assets/p (2).png" onclick="enlarge('assets/p (2).png','Way to CSA Department')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Way to CSA Department</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (4).png" onclick="enlarge('assets/p (4).png')">
+        <img class="images mx-3 my-4" src="assets/p (4).png" onclick="enlarge('assets/p (4).png','The beauty of our departement')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">The beauty of our departement</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (5).png" onclick="enlarge('assets/p (5).png')">
+        <img class="images mx-3 my-4" src="assets/p (5).png" onclick="enlarge('assets/p (5).png','Our honorable Dr. Sir Hari Singh Gour')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Our honorable Dr. Sir Hari Singh Gour</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (6).png" onclick="enlarge('assets/p (6).png')">
+        <img class="images mx-3 my-4" src="assets/p (6).png" onclick="enlarge('assets/p (6).png','Beautiful way to DHSGSU')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Beautiful way to DHSGSU</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (7).png" onclick="enlarge('assets/p (7).png')">
+        <img class="images mx-3 my-4" src="assets/p (7).png" onclick="enlarge('assets/p (7).png','Beautiful way to DHSGSU')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Beautiful way to DHSGSU</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (8).png" onclick="enlarge('assets/p (8).png')">
+        <img class="images mx-3 my-4" src="assets/p (8).png" onclick="enlarge('assets/p (8).png','Samadhi Sthal of Dr. Gour')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Samadhi Sthal of Dr. Gour</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (9).png" onclick="enlarge('assets/p (9).png')">
+        <img class="images mx-3 my-4" src="assets/p (9).png" onclick="enlarge('assets/p (9).png','Jawaharlal Nehru Library, Dr. Harisingh Gour Vishwavidyalaya Sagar (Central University)')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Jawaharlal Nehru Library, Dr. Harisingh Gour Vishwavidyalaya Sagar (Central University)</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (10).png" onclick="enlarge('assets/p (10).png')">
+        <img class="images mx-3 my-4" src="assets/p (10).png" onclick="enlarge('assets/p (10).png','Far view of Department of Computer Sciences and Application')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Far view of Department of Computer Sciences and Application</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (11).png" onclick="enlarge('assets/p (11).png')">
+        <img class="images mx-3 my-4" src="assets/p (11).png" onclick="enlarge('assets/p (11).png','New administrative building , DHSGSU')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">New administrative building , DHSGSU</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (12).png" onclick="enlarge('assets/p (12).png')">
+        <img class="images mx-3 my-4" src="assets/p (12).png" onclick="enlarge('assets/p (12).png','Entrance gate of CSA department')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Entrance gate of CSA department</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (13).png" onclick="enlarge('assets/p (13).png')">
+        <img class="images mx-3 my-4" src="assets/p (13).png" onclick="enlarge('assets/p (13).png','Classroom of CSA Department')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">Classroom of CSA Department</p>
         </figcaption>
       </figure>
       <figure>
-        <img class="images mx-3 my-4" src="assets/p (14).png" onclick="enlarge('assets/p (14).png')">
+        <img class="images mx-3 my-4" src="assets/p (14).png" onclick="enlarge('assets/p (14).png','View on entering the department')">
         <figcaption>
-          <p>This is our department</p>
+          <p class="captionOnHome">View on entering the department</p>
         </figcaption>
       </figure>
      
-  
 
 
   </div>`
@@ -689,12 +688,13 @@ function enlarge(source,caption){
   goToTop();
 console.log(source);
 document.getElementById("main").innerHTML=`<div id="enlargedImageContainer"><img src="${source}" id="enlargedImage">
-<p id="imageCaption">${caption}</p>
+<p id="home">${caption}</p>
 <p id="imageClose">Close</p>
 </div>`
 
 document.getElementById("imageClose").addEventListener("click",()=>{
   home();
+  iconChange();
   removeExtraHeader();
 })
 }

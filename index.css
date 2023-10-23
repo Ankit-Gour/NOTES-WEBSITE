@@ -1013,7 +1013,13 @@ header {
 #imageCaption{
   font-size: 20px;
   margin-top: 10px;
-  
+
+}
+
+.captionOnHome{
+  display: inline-block;
+  max-width: 300px;
+  margin-left: 30px;
 }
 /* contentLoader */
 
