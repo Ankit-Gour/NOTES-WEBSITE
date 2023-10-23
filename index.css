@@ -975,6 +975,46 @@ header {
   /* min-height: 300px; */
   
 }
+#enlargedImage{
+ width: 80%;
+ border-radius: 10px;
+
+}
+#enlargedImageContainer{
+  margin: 10px auto;
+  max-width: 800px;
+  max-height: auto;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#imageClose{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: rgb(129, 129, 220);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+#imageClose:hover{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: rgb(53, 53, 156);
+
+  border-radius: 100px;
+}
+
+#imageCaption{
+  font-size: 20px;
+  margin-top: 10px;
+  
+}
 /* contentLoader */
 
 #contentLoader {

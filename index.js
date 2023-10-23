@@ -591,20 +591,91 @@ contentLoader();
 `;
 let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Gallery</h>
   <div class="" id="photoContainer">
-  <img  class="images mx-3 my-4" src="assets/p (5).png">
-  <img  class="images mx-3 my-4" src="assets/p (4).png">
-  <img  class="images mx-3 my-4" src="assets/p (1).png">
-  <img  class="images mx-3 my-4" src="assets/p (2).png">
-  <img  class="images mx-3 my-4" src="assets/p (3).png">
-  <img  class="images mx-3 my-4" src="assets/p (6).png">
-  <img  class="images mx-3 my-4" src="assets/p (7).png">
-  <img  class="images mx-3 my-4" src="assets/p (8).png">
-  <img  class="images mx-3 my-4" src="assets/p (9).png">
-  <img  class="images mx-3 my-4" src="assets/p (10).png">
-  <img  class="images mx-3 my-4" src="assets/p (11).png">
-  <img  class="images mx-3 my-4" src="assets/p (12).png">
-  <img  class="images mx-3 my-4" src="assets/p (13).png">
-  <img  class="images mx-3 my-4" src="assets/p (14).png">
+  <figure>
+        <img class="images mx-3 my-4"  src="assets/p (3).png" onclick="enlarge('assets/p (3).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (1).png" onclick="enlarge('assets/p (1).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (2).png" onclick="enlarge('assets/p (2).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (4).png" onclick="enlarge('assets/p (4).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (5).png" onclick="enlarge('assets/p (5).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (6).png" onclick="enlarge('assets/p (6).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (7).png" onclick="enlarge('assets/p (7).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (8).png" onclick="enlarge('assets/p (8).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (9).png" onclick="enlarge('assets/p (9).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (10).png" onclick="enlarge('assets/p (10).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (11).png" onclick="enlarge('assets/p (11).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (12).png" onclick="enlarge('assets/p (12).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (13).png" onclick="enlarge('assets/p (13).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="images mx-3 my-4" src="assets/p (14).png" onclick="enlarge('assets/p (14).png')">
+        <figcaption>
+          <p>This is our department</p>
+        </figcaption>
+      </figure>
+     
   
 
 
@@ -612,6 +683,22 @@ let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Galler
   document.getElementById("main").innerHTML +=a;
 
 }
+
+// view full size image
+function enlarge(source,caption){
+  goToTop();
+console.log(source);
+document.getElementById("main").innerHTML=`<div id="enlargedImageContainer"><img src="${source}" id="enlargedImage">
+<p id="imageCaption">${caption}</p>
+<p id="imageClose">Close</p>
+</div>`
+
+document.getElementById("imageClose").addEventListener("click",()=>{
+  home();
+  removeExtraHeader();
+})
+}
+
 
 //009  About us page
 function aboutUs() {
