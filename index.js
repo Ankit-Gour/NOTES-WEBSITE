@@ -613,7 +613,6 @@ let a=document.createElement("div").innerHTML=`<h id="photoGallery">Photo Galler
 
 }
 
-home();
 //009  About us page
 function aboutUs() {
   contentLoader();
