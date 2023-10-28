@@ -27,7 +27,7 @@ header{
 
 
 
-#bca,#hub,#slideOptions p,.card-text,#next,.featuresHeadingFirst p,#footer,#contactUsOn,#extra-header,#extra-header li ,#recommendedBooks,.bookDetails p,strong,.pyqCard,#mid1Container,#sNumber,p,.CodingName,.codingSiteName,#aboutUs,.card-body,.modal-header,.modal-body label,.form-text,#question1,#question2,#goTop,#youtubeChannel ul li
+#bca,#hub,#slideOptions p,.card-text,#next,.featuresHeadingFirst p,#footer,#contactUsOn,#extra-header,#extra-header li ,#recommendedBooks,.bookDetails p,strong,.pyqCard,#mid1Container,#sNumber,p,.CodingName,.codingSiteName,#aboutUs,.card-body,.modal-header,.modal-body label,.form-text,#question1,#question2,#goTop,#youtubeChannel ul li,#photoGallery
 
 
 
@@ -37,7 +37,7 @@ header{
 }
 
 
-body{
+body,#photoContainer,#photoGallery,#goTop{
     background-color:var(--grey) !important;
     animation: fade 1s ease 0s 1 forwards;
 }
